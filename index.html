@@ -167,6 +167,48 @@ p{margin:0 0 16px}
   .two-col{grid-template-columns:1fr 1fr;gap:40px}
   .day .pics img{height:300px}.day .pics.two img{height:260px}
 }
+
+/* ===== 箇条書き・記号版（2026-11-20） ===== */
+.meta{list-style:none;padding:0;margin:30px auto 0;display:inline-block;text-align:left}
+.meta li{font-size:15px;line-height:1.9;padding:3px 0;letter-spacing:.04em}
+.meta b{color:var(--forest)}
+.gain{list-style:none;padding:0;margin:0;border-top:1px solid var(--brass)}
+.gain>li{padding:20px 0;border-bottom:1px solid var(--hair)}
+.gain .gh{display:flex;gap:16px;align-items:baseline}
+.gain .gh b{flex:0 0 28px;font-family:var(--serif);font-size:26px;font-weight:500;color:var(--brass-text);line-height:1}
+.gain .gh h3{margin:0;font-size:17px;line-height:1.7}
+.gain .gb{margin:6px 0 0 44px}
+.gain .gb p{margin:0 0 6px;font-size:14.5px;line-height:1.85}
+.gain .why{font-size:12.5px;line-height:1.8;color:var(--ink-soft)}
+.gain-note{font-size:12.5px;line-height:1.85;color:var(--ink-soft);margin:14px 0 0}
+.glance{width:100%;border-collapse:collapse;border-top:1px solid var(--brass)}
+.glance th,.glance td{text-align:left;vertical-align:top;border-bottom:1px solid var(--hair);padding:12px 0}
+.glance th{width:92px;font-weight:600;font-size:13.5px;line-height:1.7;color:var(--brass-text);letter-spacing:.06em;padding-right:10px}
+.glance th small{display:block;font-weight:400;font-size:12px;color:var(--ink-soft);letter-spacing:.04em}
+.glance td div{display:flex;gap:10px;align-items:baseline;font-size:14px;line-height:1.7;padding:2px 0}
+.glance td div .b{width:54px;font-size:11px}
+.glance-note{font-size:12.5px;line-height:1.85;color:var(--ink-soft);margin:10px 0 0}
+.vb{margin:0 0 24px;padding:14px 0 0;border-top:1px solid var(--brass)}
+.vb-h{display:flex;gap:12px;align-items:baseline}
+.vb-h .b{margin-top:0}
+.vb-h b{flex:1 1 0;min-width:0;font-family:var(--serif);font-size:18px;line-height:1.6;color:var(--forest);font-weight:700;letter-spacing:.04em}
+.vb-t{margin:4px 0 0;font-size:13.5px;line-height:1.7;color:var(--brass-text);font-weight:600;letter-spacing:.06em}
+.vb-d{margin:4px 0 0;font-size:14px;line-height:1.8;color:var(--ink-soft)}
+.dots{list-style:none;padding:0;margin:8px 0 0}
+.dots li{position:relative;padding:3px 0 3px 20px;font-size:14.5px;line-height:1.85}
+.dots li::before{content:"・";position:absolute;left:2px;top:3px}
+.dots li small{display:block;font-size:12.5px;line-height:1.7;color:var(--ink-soft)}
+.jp{margin:6px 0 0;font-size:13.5px;line-height:1.8;color:var(--ink)}
+.line{margin:0 0 14px;padding:10px 0;border-top:1px dotted var(--hair);font-size:14.5px;line-height:1.85}
+.line b{color:var(--forest)}
+.big6{margin:12px 0 0;padding:14px 16px;border:1.5px solid var(--forest);font-family:var(--serif);font-size:19px;line-height:1.6;font-weight:700;color:var(--forest);letter-spacing:.04em}
+.big6 small{display:block;font-family:var(--sans);font-size:12.5px;font-weight:400;color:var(--ink-soft);margin-top:4px;letter-spacing:.03em}
+.facts6{margin:0 0 22px;padding:22px 0;border-top:1px solid var(--brass);border-bottom:1px solid var(--brass);text-align:center}
+.facts6 .num{font-family:var(--serif);font-weight:700;font-size:54px;line-height:1.1;color:var(--forest)}
+.facts6 ul{list-style:none;padding:0;margin:12px 0 0;text-align:left;display:inline-block}
+.facts6 li{font-size:14.5px;line-height:1.85;padding:2px 0 2px 20px;position:relative}
+.facts6 li::before{content:"・";position:absolute;left:2px}
+.src{font-size:12px;line-height:1.8;color:var(--ink-soft);text-align:left;margin:12px 0 0}
 </style>
 </head>
 <body>
@@ -174,37 +216,90 @@ p{margin:0 0 16px}
 <header class="head"><div class="in">
   <p class="brand">信濃屋Onenessコミュニティ</p>
   <h1>オーガニック軸で<br>学び体感する<br>オーストリア視察ツアー</h1>
-  <p class="ask">私たちは、<br>何を守り、何を変え、<br>何を次の世代に残すのか</p>
-  <p class="sub">ウィーン発着、5泊6日。<br>7月25日から30日、現地の経営者に会いに行きます。</p>
-  <div class="organic">
-    <div class="num">27%</div>
-    <p><budoux-ja>オーストリアの農地の約27%は、有機農業です（2025年）。</budoux-ja><br><budoux-ja>日本が2050年の目標にしている25%を、すでに超えています。</budoux-ja></p>
-    <p class="src"><budoux-ja>出典：オーストリア連邦農林省『緑の報告書』（Grüner Bericht）2025年版（2025年10月時点・農用地に占める有機の割合 27.2%）／日本：農林水産省 みどりの食料システム戦略（2050年に耕地面積の25%＝100万ha）</budoux-ja></p>
-  </div>
+  <ul class="meta">
+    <li>📅 <b>2027年7月25日（日）〜7月30日（金）</b>｜5泊6日</li>
+    <li>📍 ウィーン発着</li>
+    <li>👥 最少17名・最大30名（日本の食品の経営者のみなさん）</li>
+    <li>🚌 全行程 貸切バス・日本語通訳つき</li>
+  </ul>
 </div></header>
 
-<section style="padding:0 0 64px"><div class="in">
+<section style="padding:0 0 56px"><div class="in">
   <figure class="hero bleed">
     <img src="images/nikolaihof_hof.jpg" alt="ニコライホフ（ワイナリー）の中庭">
     <figcaption><budoux-ja>7月27日に訪ねる Nikolaihof（ビオディナミのワイナリー）</budoux-ja></figcaption>
   </figure>
-
-  <div class="facts">
-    <div class="fact"><b>いつ・どこで</b><span>7/25（日）<br>〜7/30（金）</span><small>5泊6日・ウィーン発着</small></div>
-    <div class="fact"><b>だれと</b><span>最少17名<br>最大30名</span><small>日本の食品の<br>経営者のみなさん</small></div>
-    <div class="fact"><b>移動は</b><span>貸切バス</span><small>全行程を、<br>貸切バスで移動</small></div>
-    <div class="fact"><b>言葉は</b><span>日本語通訳つき</span><small>訪問先での対話も<br>通訳します</small></div>
-  </div>
 </div></section>
 
 <section class="band alt"><div class="in">
-  <h2><budoux-ja>どの訪問先でも、同じ3つを聞きます</budoux-ja></h2>
-  <ol class="q3">
+  <h2><budoux-ja>日本の商品選びに持ち帰る、4つの視点</budoux-ja></h2>
+  <ol class="gain">
+    <li>
+      <div class="gh"><b>1</b><h3><budoux-ja>つくり手の考え方が分かる</budoux-ja></h3></div>
+      <div class="gb">
+        <p>🍫 チョコ・酢・ワイン・ハーブ・お茶・スパイス・スナック</p>
+        <p><budoux-ja>製造現場を見て、各社が何を大切に商品をつくっているかを知る。価格や味だけでなく、つくり手の考えから商品を見る材料になります。</budoux-ja></p>
+        <p class="why">見る所：Zotter／Gölles／Nikolaihof／SONNENTOR／Landgarten</p>
+      </div>
+    </li>
+    <li>
+      <div class="gh"><b>2</b><h3><budoux-ja>有機農業を続ける現場が分かる</budoux-ja></h3></div>
+      <div class="gb">
+        <p>🌱 大規模農場の有機／ビオディナミ農法／地域ぐるみの土づくり</p>
+        <p><budoux-ja>商品が生まれる前の、農業の取り組みまで視野を広げます。</budoux-ja></p>
+        <p class="why">見る所：PANNATURA／Nikolaihof／Kaindorf（未定）</p>
+      </div>
+    </li>
+    <li>
+      <div class="gh"><b>3</b><h3><budoux-ja>有機が公共の給食に広がる仕組みが分かる</budoux-ja></h3></div>
+      <div class="gb">
+        <p>🏫 ウィーン市：公共施設で1日10万食以上。有機の割合は幼稚園60%・学校50%（2024年2月の基準）</p>
+        <p><budoux-ja>調達の担当者と、有機農家の全国団体から、調達の仕組みと制度の話を聞きます。商品だけでなく、調達と制度の面から有機の広がりを考える材料になります。</budoux-ja></p>
+        <p class="why">聞く所：ウィーン市の公共調達／BIO AUSTRIA（ともに日時を調整中）</p>
+      </div>
+    </li>
+    <li>
+      <div class="gh"><b>4</b><h3><budoux-ja>つくり手と売場を、両方見て比べられる</budoux-ja></h3></div>
+      <div class="gb">
+        <p>🛒 メーカーの現場を見たうえで、一般スーパーとオーガニックスーパーの品揃え・陳列を見る</p>
+        <p><budoux-ja>商品がどうつくられ、現地の売場でどう扱われているかを比べる視点になります。</budoux-ja></p>
+        <p class="why">見る所：各メーカー／ウィーン市内のスーパー（店は未定）</p>
+      </div>
+    </li>
+  </ol>
+</div></section>
+
+<section class="band"><div class="in">
+  <h2><budoux-ja>6日間をひと目で</budoux-ja></h2>
+  <table class="glance">
+    <tr><th>7/25（日）<small>1日目</small></th><td><div><span class="b hold">仮押さえ</span><span>ウィーン着・宿へ移動（バス・通訳）</span></div></td></tr>
+    <tr><th>7/26（月）<small>2日目</small></th><td><div><span class="b ok">確定</span><span>Zotter（チョコ）</span></div><div><span class="b ok">確定</span><span>Gölles（りんご酢）</span></div></td></tr>
+    <tr><th>7/27（火）<small>3日目</small></th><td><div><span class="b und">未定</span><span>Kaindorf（土づくりの町）</span></div><div><span class="b ok">確定</span><span>Nikolaihof（ワイン）</span></div></td></tr>
+    <tr><th>7/28（水）<small>4日目</small></th><td><div><span class="b wait">調整中</span><span>SONNENTOR（ハーブ・お茶）約6時間</span></div></td></tr>
+    <tr><th>7/29（木）<small>5日目</small></th><td><div><span class="b hold">仮押さえ</span><span>Landgarten（スナック）</span></div><div><span class="b wait">調整中</span><span>PANNATURA（有機の大農場）</span></div></td></tr>
+    <tr><th>7/30（金）<small>6日目</small></th><td><div><span class="b wait">調整中</span><span>ウィーン市の公共調達</span></div><div><span class="b wait">調整中</span><span>BIO AUSTRIA</span></div><div><span class="b und">未定</span><span>ウィーンのスーパー</span></div></td></tr>
+  </table>
+  <p class="glance-note"><budoux-ja>印は、その訪問先の今の状態です。印のない所は、確定ではありません。</budoux-ja></p>
+</div></section>
+
+<section class="band alt"><div class="in">
+  <h2><budoux-ja>なぜ、オーストリアなのか</budoux-ja></h2>
+  <div class="facts6">
+    <div class="num">27%</div>
+    <ul>
+      <li>農地の約27%が有機（2025年）</li>
+      <li>日本が2050年の目標にしている25%を、すでに超えている</li>
+      <li>有機は農家だけでなく、食品メーカー・流通・小売・公共の給食にまで広がっている</li>
+    </ul>
+  </div>
+  <p class="src"><budoux-ja>出典：オーストリア連邦農林省『緑の報告書』（Grüner Bericht）2025年版（2025年10月時点・農用地に占める有機の割合 27.2%）／日本：農林水産省 みどりの食料システム戦略（2050年に耕地面積の25%＝100万ha）</budoux-ja></p>
+
+  <h2 style="margin-top:44px"><budoux-ja>どの訪問先でも、同じ3つを聞きます</budoux-ja></h2>
+  <ol class="q3" style="margin-bottom:0">
     <li><b>1</b><span><budoux-ja>何を守るために、何を変えたのか</budoux-ja></span></li>
     <li><b>2</b><span><budoux-ja>それで、どう商売を成り立たせているのか</budoux-ja></span></li>
     <li><b>3</b><span><budoux-ja>次の世代に、何を残すのか</budoux-ja></span></li>
   </ol>
-  <p style="margin:0"><budoux-ja>対話の時間は、各訪問先にお願いしているところです。まだお返事のない所もあるので、下の日程に印をつけています。</budoux-ja></p>
 </div></section>
 
 <section class="band"><div class="in">
@@ -214,47 +309,57 @@ p{margin:0 0 16px}
     <div><span class="b ok">確定</span><span>決まっています</span></div>
     <div><span class="b hold">仮押さえ</span><span>日程を押さえています</span></div>
     <div><span class="b wait">調整中</span><span>先方とやり取りを進めています</span></div>
-    <div><span class="b und">未定</span><span>まだ返事がない・まだ決まっていません</span></div>
+    <div><span class="b und">未定</span><span>まだ返事がない・決まっていません</span></div>
   </div>
 
+  <!-- 1日目 -->
   <section class="day">
     <span class="dlabel">1日目｜7/25（日）</span>
-    <h3><budoux-ja>ウィーンに着いて、田園の宿へ</budoux-ja></h3>
-    <p><budoux-ja>空港でお迎えし、貸切バスでシュタイアーマルク州へ（約2時間）。この日は移動と休息にあてます。</budoux-ja></p>
-    <ul class="badges">
-      <li><span class="b hold">仮押さえ</span><span><budoux-ja>貸切バス・通訳</budoux-ja></span></li>
-    </ul>
+    <h3><budoux-ja>ウィーン着 → 田園の宿へ</budoux-ja></h3>
+    <p class="line">✈️ 空港でお迎え　→　🚌 貸切バスで<b>シュタイアーマルク州へ（約2時間）</b>　→　休息<br><span class="b hold" style="display:inline-block;margin-top:6px">仮押さえ</span> <span style="font-size:13px;color:var(--ink-soft)">貸切バス・通訳</span></p>
     <div class="stay">
-      <div class="stay-tag">この日の宿</div>
+      <div class="stay-tag">🏨 この日の宿</div>
       <figure class="ph"><img src="images/retter.jpg" alt="RETTER"><figcaption>RETTER</figcaption></figure>
-
       <p class="cap stay-cap"><budoux-ja>写真は宿の候補のイメージです</budoux-ja></p>
       <div class="stay-name"><span class="b und">未定</span><span>RETTER Bio-Natur-Resort（シュタイアーマルク州・Pöllauberg）</span></div>
-      <p class="stay-status"><budoux-ja>まだ宿を押さえていません。人数が決まる3月に申し込みます</budoux-ja></p>
-      <p><budoux-ja>オーストリアのビオホテルです。1886年に農家を買った家族が始め、いまも家族経営です。</budoux-ja><br><budoux-ja>料理は認証つきの有機で、自分たちの有機農場の作物を、自分たちで加工しています。</budoux-ja><br><budoux-ja>2013年、オーストリアで初めて、Green Globeと環境ラベルの両方を取りました。</budoux-ja></p>
-      <p class="stay-meta"><budoux-ja>有機の認証：農場は1990年から、レストランは2004年から。2024年から BIO HOTELS と Slow Food Österreich の会員です（宿の公式サイトより）。</budoux-ja></p>
-    <figure class="ph"><img src="images/retter_2.jpg" alt="RETTER"><figcaption>RETTER</figcaption></figure>
-    <div class="grp" style="--ar:4/3">
-      <figure><img src="images/retter_3.jpg" alt="RETTER"><figcaption>RETTER</figcaption></figure>
-      <figure><img src="images/retter_4.jpg" alt="RETTER"><figcaption>RETTER</figcaption></figure>
-    </div>
-    <div class="grp" style="--ar:4/3">
-      <figure><img src="images/retter_5.jpg" alt="RETTER"><figcaption>RETTER</figcaption></figure>
-      <figure><img src="images/retter_6.jpg" alt="RETTER"><figcaption>RETTER</figcaption></figure>
-    </div>
+      <p class="stay-status">まだ押さえていません。人数が決まる3月に申し込みます</p>
+      <ul class="dots">
+        <li>オーストリアのビオホテル。1886年に農家を買った家族が始め、いまも家族経営</li>
+        <li>料理は認証つきの有機。自分たちの有機農場の作物を、自分たちで加工</li>
+        <li>2013年、オーストリアで初めて Green Globe と環境ラベルの両方を取得</li>
+        <li><small>有機の認証：農場は1990年から、レストランは2004年から。2024年から BIO HOTELS と Slow Food Österreich の会員（宿の公式サイトより）</small></li>
+      </ul>
+      <figure class="ph" style="margin-top:20px"><img src="images/retter_2.jpg" alt="RETTER"><figcaption>RETTER</figcaption></figure>
+      <div class="grp" style="--ar:4/3">
+        <figure><img src="images/retter_3.jpg" alt="RETTER"><figcaption>RETTER</figcaption></figure>
+        <figure><img src="images/retter_4.jpg" alt="RETTER"><figcaption>RETTER</figcaption></figure>
+      </div>
+      <div class="grp" style="--ar:4/3">
+        <figure><img src="images/retter_5.jpg" alt="RETTER"><figcaption>RETTER</figcaption></figure>
+        <figure><img src="images/retter_6.jpg" alt="RETTER"><figcaption>RETTER</figcaption></figure>
+      </div>
     </div>
   </section>
 
+  <!-- 2日目 -->
   <section class="day">
     <figure class="ph pano"><img src="images/zotter_2.jpg" alt="Zotter"><figcaption>Zotter</figcaption></figure>
     <span class="dlabel">2日目｜7/26（月）</span>
     <h3><budoux-ja>チョコレートと、りんごのバルサミコ酢の町へ</budoux-ja></h3>
-    <ul class="visits">
-      <li><b>Zotter</b><span><budoux-ja>有機・フェアトレードのチョコレートメーカー。原料は有機・フェアトレードだけで、カカオ豆から板チョコまでを自社でつくります。</budoux-ja></span><div class="prodrow"><img src="images/prod_zotter.jpg" alt="Zotter"><div><span class="pc">代表的な商品のひとつ</span><br><budoux-ja>日本にも輸入元があります。</budoux-ja></div></div></li>
-      <li><b>Manufaktur Gölles</b><span><budoux-ja>りんごの酢と蒸留酒のつくり手。「りんごのバルサミコ酢」で知られます。</budoux-ja></span><div class="prodrow"><img src="images/prod_goelles.jpg" alt="Manufaktur Gölles"><div><span class="pc">代表的な商品のひとつ</span><br><budoux-ja>日本の一部の専門店でも買えます。</budoux-ja></div></div></li>
-    </ul>
-    <p><budoux-ja>午前10時から Zotter（有機・フェアトレードのチョコレート。約3時間）。</budoux-ja></p>
-    <p><budoux-ja>やること：工場の見学です。カカオ豆から板チョコまでの作り方を順に見ます。ご家族のJulia Zotterさんとの対話もお願いしていますが、時間が取れるかどうかは直前までわかりません。</budoux-ja></p>
+    <p class="line">📍 どちらも <b>Riegersburg（リーガースブルク）</b>の町にあります</p>
+
+    <div class="vb">
+      <div class="vb-h"><span class="b ok">確定</span><b>Zotter</b></div>
+      <p class="vb-t">🕙 10:00〜（約3時間）</p>
+      <p class="vb-d">有機・フェアトレードのチョコレートメーカー</p>
+      <ul class="dots">
+        <li>原料は有機・フェアトレードだけ。カカオ豆から板チョコまで自社でつくる</li>
+        <li>工場見学：カカオ豆から板チョコまでの作り方を順に見る</li>
+        <li>Julia Zotterさんとの対話：お願い中（時間が取れるかは直前まで分からない）</li>
+        <li><small>予約と条件は確認ずみ</small></li>
+      </ul>
+      <div class="prodrow"><img src="images/prod_zotter.jpg" alt="Zotter"><div><span class="pc">代表的な商品のひとつ</span><br>🇯🇵 日本：輸入元あり</div></div>
+    </div>
     <div class="grp" style="--ar:4/3">
       <figure><img src="images/zotter_3.jpg" alt="Zotter"><figcaption>Zotter</figcaption></figure>
       <figure><img src="images/zotter_4.jpg" alt="Zotter"><figcaption>Zotter</figcaption></figure>
@@ -263,58 +368,82 @@ p{margin:0 0 16px}
       <figure><img src="images/zotter_5.jpg" alt="Zotter"><figcaption>Zotter</figcaption></figure>
       <figure><img src="images/zotter_6.jpg" alt="Zotter"><figcaption>Zotter</figcaption></figure>
     </div>
+
     <figure class="ph"><img src="images/goelles_2.jpg" alt="Manufaktur Gölles"><figcaption>Manufaktur Gölles</figcaption></figure>
-    <p><budoux-ja>午後2時半から Manufaktur Gölles（約2時間）。</budoux-ja><br><budoux-ja>1984年にアロイス・ゲレスが世界初のリンゴ・バルサミコ酢をつくりました。約1,500本のオーク樽が並ぶ貯蔵庫と蒸留所を見学します。</budoux-ja><br><budoux-ja>会社は有機の認証を受けていて、蒸留酒の一部が有機です（Hands On Organic Gin、Saljut Organic Vodka など）。有機でない商品もあります。</budoux-ja></p>
-    <p><budoux-ja>やること：案内つきの見学です。先方の団体向けの案内には、酢の香りと味見、蒸留所の見学、蒸留酒の試飲があります。そのあと、David Göllesさんが質問に答えてくださいます。</budoux-ja></p>
+    <div class="vb">
+      <div class="vb-h"><span class="b ok">確定</span><b>Manufaktur Gölles</b></div>
+      <p class="vb-t">🕑 14:30〜（約2時間）</p>
+      <p class="vb-d">りんごの酢と蒸留酒のつくり手。「りんごのバルサミコ酢」で知られる</p>
+      <ul class="dots">
+        <li>1984年、Alois Göllesが世界初のリンゴ・バルサミコ酢をつくった</li>
+        <li>見学：約1,500本のオーク樽が並ぶ貯蔵庫と蒸留所</li>
+        <li>酢の香りと味見／蒸留酒の試飲（先方の団体向けの案内）</li>
+        <li>David Göllesさんが質問に答える</li>
+        <li>有機：会社は認証あり。蒸留酒の一部が有機（Hands On Organic Gin、Saljut Organic Vodka など）。有機でない商品もある</li>
+        <li><small>来訪時刻をお伝えずみ</small></li>
+      </ul>
+      <div class="prodrow"><img src="images/prod_goelles.jpg" alt="Manufaktur Gölles"><div><span class="pc">代表的な商品のひとつ</span><br>🇯🇵 日本：一部の専門店で買える</div></div>
+    </div>
     <div class="grp" style="--ar:4/3">
       <figure><img src="images/goelles_3.jpg" alt="Manufaktur Gölles"><figcaption>Manufaktur Gölles</figcaption></figure>
       <figure><img src="images/goelles_5.jpg" alt="Manufaktur Gölles"><figcaption>Manufaktur Gölles</figcaption></figure>
     </div>
     <figure class="ph"><img src="images/goelles_4.jpg" alt="Manufaktur Gölles"><figcaption>Manufaktur Gölles</figcaption></figure>
     <figure class="ph"><img src="images/goelles_6.jpg" alt="Manufaktur Gölles"><figcaption>Manufaktur Gölles</figcaption></figure>
-    <p><budoux-ja>どちらも、リーガースブルクの町にあります。</budoux-ja></p>
     <figure class="ph"><img src="images/riegersburg_2.jpg" alt="Riegersburg"><figcaption>Riegersburg</figcaption></figure>
     <div class="grp" style="--ar:4/3">
       <figure><img src="images/riegersburg_3.jpg" alt="Riegersburg"><figcaption>Riegersburg</figcaption></figure>
       <figure><img src="images/riegersburg_4.jpg" alt="Riegersburg"><figcaption>Riegersburg</figcaption></figure>
     </div>
-    <ul class="badges">
-      <li><span class="b ok">確定</span><span><budoux-ja>Zotter：予約と条件を確認ずみ（経営陣との対話は「可能なら」とお願い中）</budoux-ja></span></li>
-      <li><span class="b ok">確定</span><span><budoux-ja>Gölles：来訪時刻をお伝えずみ（見学のあと、質問に答えていただけます）</budoux-ja></span></li>
-    </ul>
-    <div class="stay">
-      <div class="stay-tag">この日の宿</div>
-      <figure class="ph"><img src="images/retter.jpg" alt="RETTER"><figcaption>RETTER</figcaption></figure>
 
+    <div class="stay">
+      <div class="stay-tag">🏨 この日の宿</div>
+      <figure class="ph"><img src="images/retter.jpg" alt="RETTER"><figcaption>RETTER</figcaption></figure>
       <p class="cap stay-cap"><budoux-ja>写真は宿の候補のイメージです</budoux-ja></p>
-      <p class="stay-same"><budoux-ja>前の日と同じ宿に泊まります</budoux-ja></p>
-      <div class="stay-name"><span class="b und">未定</span><span>RETTER Bio-Natur-Resort（シュタイアーマルク州・Pöllauberg）</span></div>
-      <p class="stay-status"><budoux-ja>まだ宿を押さえていません。人数が決まる3月に申し込みます</budoux-ja></p>
-      <p><budoux-ja>オーストリアのビオホテルです。1886年に農家を買った家族が始め、いまも家族経営です。</budoux-ja></p>
+      <div class="stay-name"><span class="b und">未定</span><span>RETTER（前の日と同じ宿）</span></div>
+      <p class="stay-status">まだ押さえていません。人数が決まる3月に申し込みます</p>
     </div>
   </section>
 
+  <!-- 3日目 -->
   <section class="day">
     <figure class="ph"><img src="images/kaindorf_3.jpg" alt="Ökoregion Kaindorf"><figcaption>Ökoregion Kaindorf</figcaption></figure>
     <span class="dlabel">3日目｜7/27（火）</span>
     <h3><budoux-ja>地域ぐるみの農と、ビオディナミのワインを、1日で</budoux-ja></h3>
-    <ul class="visits">
-      <li><b>Ökoregion Kaindorf</b><span><budoux-ja>地域ぐるみで、土づくりに取り組む町です。</budoux-ja></span></li>
-      <li><b>Nikolaihof</b><span><budoux-ja>ワイナリー。ビオディナミ（自然の力を生かす農法）でワインをつくります。</budoux-ja></span><div class="prodrow"><img src="images/prod_nikolaihof.jpg" alt="Nikolaihof"><div><span class="pc">代表的な商品のひとつ</span><br><budoux-ja>日本にも輸入されています。</budoux-ja></div></div></li>
-    </ul>
-    <p><budoux-ja>午前は Ökoregion Kaindorf（地域ぐるみで土づくりに取り組む町）。</budoux-ja></p>
-    <p><budoux-ja>やること：町の取り組みの説明と見学です。中身は、これから先方と相談します。</budoux-ja></p>
+
+    <div class="vb">
+      <div class="vb-h"><span class="b und">未定</span><b>Ökoregion Kaindorf</b></div>
+      <p class="vb-t">🌅 午前</p>
+      <p class="vb-d">地域ぐるみで、土づくりに取り組む町</p>
+      <ul class="dots">
+        <li>町の取り組みの説明と見学（中身は先方と相談）</li>
+        <li>経営者との対話：未定</li>
+        <li><small>先方からのお返事を待っています</small></li>
+      </ul>
+    </div>
     <div class="grp" style="--ar:4/3">
       <figure><img src="images/kaindorf_1.jpeg" alt="Ökoregion Kaindorf"><figcaption>Ökoregion Kaindorf</figcaption></figure>
       <figure><img src="images/kaindorf_2.jpg" alt="Ökoregion Kaindorf"><figcaption>Ökoregion Kaindorf</figcaption></figure>
     </div>
     <figure class="ph"><img src="images/kaindorf_6.jpg" alt="Ökoregion Kaindorf"><figcaption>Ökoregion Kaindorf</figcaption></figure>
+
+    <p class="line">🚌 ドナウ川沿いの <b>Wachau（ヴァッハウ）地方</b>へバスで移動</p>
     <div class="grp" style="--ar:4/3">
       <figure><img src="images/wachau_1.jpg" alt="Wachau（ヴァッハウ）"><figcaption>Wachau（ヴァッハウ）</figcaption></figure>
       <figure><img src="images/wachau_2.jpg" alt="Wachau（ヴァッハウ）"><figcaption>Wachau（ヴァッハウ）</figcaption></figure>
     </div>
-    <p><budoux-ja>そのあと、ドナウ川沿いのヴァッハウ地方へバスで移動します。午後3時から Nikolaihof（ワイナリー。ワインの試飲3種類）。</budoux-ja></p>
-    <p><budoux-ja>やること：ワイナリーの見学と、ビオディナミ栽培のワイン3種類の試飲です。ご家族との短い対話も、お願いしているところです。</budoux-ja></p>
+
+    <div class="vb">
+      <div class="vb-h"><span class="b ok">確定</span><b>Nikolaihof</b></div>
+      <p class="vb-t">🕒 15:00〜</p>
+      <p class="vb-d">ワイナリー。ビオディナミ（自然の力を生かす農法）でワインをつくる</p>
+      <ul class="dots">
+        <li>ワイナリーの見学</li>
+        <li>ビオディナミ栽培のワイン3種類の試飲</li>
+        <li>ご家族との対話：未定（お願いする予定）</li>
+      </ul>
+      <div class="prodrow"><img src="images/prod_nikolaihof.jpg" alt="Nikolaihof"><div><span class="pc">代表的な商品のひとつ</span><br>🇯🇵 日本：輸入されている</div></div>
+    </div>
     <div class="grp" style="--ar:4/3">
       <figure><img src="images/nikolaihof_3.jpg" alt="Nikolaihof"><figcaption>Nikolaihof</figcaption></figure>
       <figure><img src="images/nikolaihof_4.jpg" alt="Nikolaihof"><figcaption>Nikolaihof</figcaption></figure>
@@ -324,39 +453,45 @@ p{margin:0 0 16px}
       <figure><img src="images/nikolaihof_6.jpg" alt="Nikolaihof"><figcaption>Nikolaihof</figcaption></figure>
       <figure><img src="images/nikolaihof_7.jpg" alt="Nikolaihof"><figcaption>Nikolaihof</figcaption></figure>
     </div>
-    <p><budoux-ja>夜は Loisium のホテルに泊まります。</budoux-ja></p>
-    <ul class="badges">
-      <li><span class="b ok">確定</span><span><budoux-ja>Nikolaihof：7/27 15:00（試飲3種類）。経営者との対話をお願いする予定</budoux-ja></span></li>
-      <li><span class="b und">未定</span><span><budoux-ja>Ökoregion Kaindorf：お返事を待っています</budoux-ja></span></li>
-      <li><span class="b und">未定</span><span><budoux-ja>Ökoregion Kaindorf：経営者との対話</budoux-ja></span></li>
-    </ul>
-    <div class="stay">
-      <div class="stay-tag">この日の宿</div>
-      <figure class="ph"><img src="images/loisium_2.jpg" alt="LOISIUM"><figcaption>LOISIUM</figcaption></figure>
 
+    <div class="stay">
+      <div class="stay-tag">🏨 この日の宿</div>
+      <figure class="ph"><img src="images/loisium_2.jpg" alt="LOISIUM"><figcaption>LOISIUM</figcaption></figure>
       <div class="stay-name"><span class="b hold">仮押さえ</span><span>LOISIUM Langenlois（ヴァッハウ方面）</span></div>
-      <p class="stay-status"><budoux-ja>お部屋と条件はOKのお返事をいただきました。仮押さえの期限は、年末までと提案されています</budoux-ja></p>
-      <p><budoux-ja>ワインの里にあるスパつきのホテルです。朝食とスパは宿泊料金に入っています。</budoux-ja></p>
-    <div class="grp" style="--ar:4/3">
-      <figure><img src="images/loisium_3.jpg" alt="LOISIUM"><figcaption>LOISIUM</figcaption></figure>
-      <figure><img src="images/loisium_4.jpg" alt="LOISIUM"><figcaption>LOISIUM</figcaption></figure>
-    </div>
-    <div class="grp" style="--ar:4/3">
-      <figure><img src="images/loisium_5.jpg" alt="LOISIUM"><figcaption>LOISIUM</figcaption></figure>
-      <figure><img src="images/loisium_6.jpg" alt="LOISIUM"><figcaption>LOISIUM</figcaption></figure>
-    </div>
+      <p class="stay-status">お部屋と条件はOKのお返事をいただきました。仮押さえの期限は、年末までと提案されています</p>
+      <ul class="dots">
+        <li>ワインの里にあるスパつきのホテル</li>
+        <li>朝食とスパは宿泊料金に入っている</li>
+      </ul>
+      <div class="grp" style="--ar:4/3;margin-top:18px">
+        <figure><img src="images/loisium_3.jpg" alt="LOISIUM"><figcaption>LOISIUM</figcaption></figure>
+        <figure><img src="images/loisium_4.jpg" alt="LOISIUM"><figcaption>LOISIUM</figcaption></figure>
+      </div>
+      <div class="grp" style="--ar:4/3">
+        <figure><img src="images/loisium_5.jpg" alt="LOISIUM"><figcaption>LOISIUM</figcaption></figure>
+        <figure><img src="images/loisium_6.jpg" alt="LOISIUM"><figcaption>LOISIUM</figcaption></figure>
+      </div>
     </div>
   </section>
 
+  <!-- 4日目 -->
   <section class="day">
     <figure class="ph"><img src="images/sonnentor_2.jpg" alt="SONNENTOR"><figcaption>SONNENTOR</figcaption></figure>
     <span class="dlabel">4日目｜7/28（水）</span>
     <h3><budoux-ja>ハーブとお茶の会社で、一日を過ごす</budoux-ja></h3>
-    <ul class="visits">
-      <li><b>SONNENTOR</b><span><budoux-ja>有機のハーブ・お茶・スパイスのメーカー。海外の市場にも広げてきた会社です。</budoux-ja></span><div class="prodrow"><img src="images/prod_sonnentor.jpg" alt="SONNENTOR"><div><span class="pc">代表的な商品のひとつ</span><br><budoux-ja>日本にも輸出しています。</budoux-ja></div></div></li>
-    </ul>
-    <p><budoux-ja>午前10時ごろから午後4時ごろまで、全体で約6時間、SONNENTOR（有機のハーブ・お茶・スパイス）で過ごします。</budoux-ja></p>
-    <p><budoux-ja>やること：本社・工場・ショップの見学（3時間以上、通訳つき）。敷地内のレストランでの昼食と、経営に近い方との対談（60分）は、お願いしているところです。見学・昼食・対談を合わせて、約6時間の滞在です。</budoux-ja></p>
+
+    <div class="vb">
+      <div class="vb-h"><span class="b wait">調整中</span><b>SONNENTOR</b></div>
+      <p class="vb-d">有機のハーブ・お茶・スパイスのメーカー。海外の市場にも広げてきた会社</p>
+      <p class="big6">🕙 10:00頃〜16:00頃｜全体で約6時間<small>見学・昼食・対談を合わせた滞在時間です</small></p>
+      <ul class="dots">
+        <li>見学：本社・工場・ショップ（3時間以上・通訳つき）</li>
+        <li>昼食：敷地内のレストラン（お願い中）</li>
+        <li>対談：経営に近い方と60分（お願い中）</li>
+        <li><small>日本の総代理店を通じて、時間割を相談中</small></li>
+      </ul>
+      <div class="prodrow"><img src="images/prod_sonnentor.jpg" alt="SONNENTOR"><div><span class="pc">代表的な商品のひとつ</span><br>🇯🇵 日本：輸出している</div></div>
+    </div>
     <div class="grp" style="--ar:4/3">
       <figure><img src="images/sonnentor_3.jpg" alt="SONNENTOR"><figcaption>SONNENTOR</figcaption></figure>
       <figure><img src="images/sonnentor_4.jpg" alt="SONNENTOR"><figcaption>SONNENTOR</figcaption></figure>
@@ -366,40 +501,51 @@ p{margin:0 0 16px}
       <figure><img src="images/sonnentor_5.jpg" alt="SONNENTOR"><figcaption>SONNENTOR</figcaption></figure>
       <figure><img src="images/sonnentor_6.jpg" alt="SONNENTOR"><figcaption>SONNENTOR</figcaption></figure>
     </div>
-    <p><budoux-ja>夜は前日と同じ宿です。</budoux-ja></p>
-    <ul class="badges">
-      <li><span class="b wait">調整中</span><span><budoux-ja>SONNENTOR：日本の総代理店を通じて、時間割をご相談中</budoux-ja></span></li>
-    </ul>
-    <div class="stay">
-      <div class="stay-tag">この日の宿</div>
-      <figure class="ph"><img src="images/loisium_2.jpg" alt="LOISIUM"><figcaption>LOISIUM</figcaption></figure>
 
-      <p class="stay-same"><budoux-ja>前日と同じ宿に泊まります</budoux-ja></p>
-      <div class="stay-name"><span class="b hold">仮押さえ</span><span>LOISIUM Langenlois（ヴァッハウ方面）</span></div>
-      <p class="stay-status"><budoux-ja>お部屋と条件はOKのお返事をいただきました。仮押さえの期限は、年末までと提案されています</budoux-ja></p>
-      <p><budoux-ja>ワインの里にあるスパつきのホテルです。朝食とスパは宿泊料金に入っています。</budoux-ja></p>
+    <div class="stay">
+      <div class="stay-tag">🏨 この日の宿</div>
+      <figure class="ph"><img src="images/loisium_2.jpg" alt="LOISIUM"><figcaption>LOISIUM</figcaption></figure>
+      <div class="stay-name"><span class="b hold">仮押さえ</span><span>LOISIUM Langenlois（前日と同じ宿）</span></div>
     </div>
   </section>
 
+  <!-- 5日目 -->
   <section class="day">
     <figure class="ph"><img src="images/landgarten_2.jpg" alt="Landgarten"><figcaption>Landgarten</figcaption></figure>
     <span class="dlabel">5日目｜7/29（木）</span>
     <h3><budoux-ja>有機スナックの会社と、有機の大きな農場を訪ねて、ウィーンへ</budoux-ja></h3>
-    <ul class="visits">
-      <li><b>Landgarten</b><span><budoux-ja>有機のスナックのメーカーです。</budoux-ja></span><div class="prodrow"><img src="images/prod_landgarten_choco.jpg" alt="Landgarten"><div><span class="pc">代表的な商品のひとつ</span><br><budoux-ja>日本を含む30か国以上に出荷しています（ブランド紹介による）。</budoux-ja></div></div></li>
-    </ul>
-    <p><budoux-ja>午前10時から Landgarten（有機スナックのメーカー。約2時間）。</budoux-ja></p>
-    <p><budoux-ja>やること：2か所の製造拠点の見学です（約2時間）。社長との対話は、いま確認しています。</budoux-ja></p>
+
+    <div class="vb">
+      <div class="vb-h"><span class="b hold">仮押さえ</span><b>Landgarten</b></div>
+      <p class="vb-t">🕙 10:00〜（約2時間）</p>
+      <p class="vb-d">有機のスナックのメーカー</p>
+      <ul class="dots">
+        <li>2か所の製造拠点の見学</li>
+        <li>社長との対話：確認中</li>
+        <li><small>人数は3月末までに連絡します</small></li>
+      </ul>
+      <div class="prodrow"><img src="images/prod_landgarten_choco.jpg" alt="Landgarten"><div><span class="pc">代表的な商品のひとつ</span><br>🇯🇵 日本を含む30か国以上に出荷（ブランド紹介による）</div></div>
+    </div>
     <div class="grp" style="--ar:3/4">
       <figure><img src="images/landgarten_4.jpg" alt="Landgarten"><figcaption>Landgarten</figcaption></figure>
       <figure><img src="images/landgarten_6.jpg" alt="Landgarten"><figcaption>Landgarten</figcaption></figure>
     </div>
     <figure class="ph"><img src="images/landgarten_3.jpg" alt="Landgarten"><figcaption>Landgarten</figcaption></figure>
-    <p><budoux-ja>午後は PANNATURA（Bio-Landgut Esterházy）へ向かいます。農場での昼食、農場の見学、経営の責任者との対話（30〜45分）で、3時間半から4時間ほどを考えています。</budoux-ja></p>
-    <p><budoux-ja>そのあとウィーンへ戻り、夜はウィーンのホテル MOOONS Vienna に泊まります（ウィーン中央駅の向かいです）。</budoux-ja></p>
-    <p class="cap"><budoux-ja>写真は PANNATURA です。午後の訪問は、いま先方に確認しています</budoux-ja></p>
-    <p style="font-size:14.5px;margin:0 0 16px"><budoux-ja>PANNATURA（Bio-Landgut Esterházy）は、2002年から、自社で耕す畑をすべて有機で営んでいる農場です。有機の畑は約2,100ヘクタール、東京ドーム約450個分です（2017年の報道）。穀物や大豆をつくるだけでなく、直売所・レストラン・畑のイベントまで、自分たちで運営しています。</budoux-ja></p>
-    <div class="prodrow"><img src="images/prod_pannatura.jpg" alt="PANNATURA"><div><span class="pc">代表的な商品のひとつ</span></div></div>
+
+    <div class="vb">
+      <div class="vb-h"><span class="b wait">調整中</span><b>PANNATURA（Bio-Landgut Esterházy）</b></div>
+      <p class="vb-t">🕐 午後（3時間半〜4時間）</p>
+      <p class="vb-d">2002年から、自社で耕す畑をすべて有機で営んでいる農場</p>
+      <ul class="dots">
+        <li>農場での昼食</li>
+        <li>農場の見学</li>
+        <li>経営の責任者との対話（30〜45分）</li>
+        <li>有機の畑は約2,100ヘクタール＝東京ドーム約450個分（2017年の報道）</li>
+        <li>穀物・大豆の生産に加え、直売所・レストラン・畑のイベントまで自分たちで運営</li>
+        <li><small>9月に、農場ツアー・マルクトハレ（市場ホール）・農場での昼食は可能とのお返事。経営の責任者との対話と費用は、先方に確認中</small></li>
+      </ul>
+      <div class="prodrow"><img src="images/prod_pannatura.jpg" alt="PANNATURA"><div><span class="pc">代表的な商品のひとつ</span></div></div>
+    </div>
     <figure class="ph"><img src="images/pannatura_2.jpg" alt="PANNATURA"><figcaption>PANNATURA</figcaption></figure>
     <div class="grp" style="--ar:4/3">
       <figure><img src="images/pannatura_3.jpg" alt="PANNATURA"><figcaption>PANNATURA</figcaption></figure>
@@ -410,100 +556,121 @@ p{margin:0 0 16px}
       <figure><img src="images/pannatura_6.jpg" alt="PANNATURA"><figcaption>PANNATURA</figcaption></figure>
       <figure><img src="images/pannatura_7.jpg" alt="PANNATURA"><figcaption>PANNATURA</figcaption></figure>
     </div>
-    <ul class="badges">
-      <li><span class="b hold">仮押さえ</span><span><budoux-ja>Landgarten：7/29 10:00（人数は3月末までに連絡。社長との対話は確認中）</budoux-ja></span></li>
-      <li><span class="b wait">調整中</span><span><budoux-ja>PANNATURA：9月に、農場ツアー・マルクトハレ（市場ホール）・農場での昼食は可能とのお返事をいただきました。経営の責任者との対話と費用は、先方に確認しています</budoux-ja></span></li>
-    </ul>
-    <div class="stay">
-      <div class="stay-tag">この日の宿</div>
-      <figure class="ph"><img src="images/mooons_rooftop.jpg" alt="MOOONS Vienna"><figcaption>MOOONS Vienna</figcaption></figure>
 
-      <div class="stay-name"><span class="b ok">確定</span><span>MOOONS Vienna（ウィーン中央駅の近く）</span></div>
-      <p><budoux-ja>2019年開業のデザインホテルです。テーマは月と宇宙。屋上に庭とバーがあります。</budoux-ja></p>
-      <p class="stay-meta"><budoux-ja>30室・契約が成立しました</budoux-ja></p>
-    <div class="grp" style="--ar:4/3">
-      <figure><img src="images/mooons_2.jpg" alt="MOOONS Vienna"><figcaption>MOOONS Vienna</figcaption></figure>
-      <figure><img src="images/mooons_3.jpg" alt="MOOONS Vienna"><figcaption>MOOONS Vienna</figcaption></figure>
-    </div>
-    <div class="grp" style="--ar:4/3">
-      <figure><img src="images/mooons_4.jpg" alt="MOOONS Vienna"><figcaption>MOOONS Vienna</figcaption></figure>
-      <figure><img src="images/mooons_5.jpg" alt="MOOONS Vienna"><figcaption>MOOONS Vienna</figcaption></figure>
-    </div>
+    <p class="line">🚌 そのあと、ウィーンへ戻ります</p>
+    <div class="stay">
+      <div class="stay-tag">🏨 この日の宿</div>
+      <figure class="ph"><img src="images/mooons_rooftop.jpg" alt="MOOONS Vienna"><figcaption>MOOONS Vienna</figcaption></figure>
+      <div class="stay-name"><span class="b ok">確定</span><span>MOOONS Vienna（ウィーン中央駅の向かい）</span></div>
+      <ul class="dots">
+        <li>2019年開業のデザインホテル。テーマは月と宇宙。屋上に庭とバー</li>
+        <li>30室・契約が成立</li>
+      </ul>
+      <div class="grp" style="--ar:4/3;margin-top:18px">
+        <figure><img src="images/mooons_2.jpg" alt="MOOONS Vienna"><figcaption>MOOONS Vienna</figcaption></figure>
+        <figure><img src="images/mooons_3.jpg" alt="MOOONS Vienna"><figcaption>MOOONS Vienna</figcaption></figure>
+      </div>
+      <div class="grp" style="--ar:4/3">
+        <figure><img src="images/mooons_4.jpg" alt="MOOONS Vienna"><figcaption>MOOONS Vienna</figcaption></figure>
+        <figure><img src="images/mooons_5.jpg" alt="MOOONS Vienna"><figcaption>MOOONS Vienna</figcaption></figure>
+      </div>
     </div>
   </section>
 
+  <!-- 6日目 -->
   <section class="day">
     <figure class="ph"><img src="images/wien_1.jpg" alt="Wien（ウィーン）"><figcaption>Wien（ウィーン）</figcaption></figure>
     <span class="dlabel">6日目｜7/30（金）</span>
     <h3><budoux-ja>ウィーン市と有機団体の話を聞いて、スーパーを見て、空港へ</budoux-ja></h3>
-    <ul class="visits">
-      <li><b>ウィーン市の公共給食の担当の方</b><span><budoux-ja>ウィーン市は1998年から、公共の食事の調達基準を運用しています。公共施設で1日に10万食以上を出し、有機の割合は幼稚園60%・学校50%です（2024年2月の基準）。</budoux-ja></span></li>
-      <li><b>BIO AUSTRIA（Annette Braun さん）</b><span><budoux-ja>オーストリアの有機農家の団体です。</budoux-ja></span></li>
-    </ul>
-    <p><budoux-ja>午前は、ウィーン市の病院グループで食品の購買を統括している担当者に、お話を聞きます。「ウィーン市として話せる」と、ご本人から返事をいただいています。</budoux-ja></p>
-    <p><budoux-ja>お聞きするのは、学校・幼稚園・病院・高齢者施設で、いまの有機の割合にどうやって届いたか（背景・事情・目標）と、オーストリアの調達市場と政策の見通しです。希望すれば、資料も用意していただけます。</budoux-ja></p>
-    <p><budoux-ja>時間は約90分（同時通訳）で、費用はかかりません。場所は、病院グループの本部（ウィーン市内・Thomas-Klestil-Platz）です。部屋は、先方がこれから予約します。</budoux-ja></p>
-    <p><budoux-ja>日にちは、7月29日か30日で、先方はどちらも可能です。こちらは、30日の午前で進めたいと考えています。</budoux-ja></p>
-    <p><budoux-ja>調理場の見学はできません。お話を聞く時間です。</budoux-ja></p>
-    <p><budoux-ja>BIO AUSTRIA（オーストリアの有機農家の団体）の Annette Braun さん（集団給食の担当）にも、講演をお願いしています。話してもらうのは、オーストリアの有機の仕組みと、公共の給食での広がりです。講演はお受けいただき、日にちと時間は先方と相談中です。</budoux-ja></p>
+
+    <div class="vb">
+      <div class="vb-h"><span class="b wait">調整中</span><b>ウィーン市の公共調達の担当の方</b></div>
+      <p class="vb-t">🌅 午前（約90分・同時通訳）</p>
+      <p class="vb-d">ウィーン市の公共の食事の調達を担当。「ウィーン市として話せる」と、ご本人からお返事あり</p>
+      <ul class="dots">
+        <li>ウィーン市は1998年から、公共の食事の調達基準を運用</li>
+        <li>公共施設で1日10万食以上。有機の割合は幼稚園60%・学校50%（2024年2月の基準）</li>
+        <li>聞くこと：学校・幼稚園・病院・高齢者施設などで、いまの有機の割合にどう届いたか（背景・事情・目標）／オーストリアの調達市場と政策の見通し</li>
+        <li>費用：かかりません</li>
+        <li>場所：ウィーン市内（病院グループの本部・Thomas-Klestil-Platz）。部屋は先方が予約</li>
+        <li>日にち：7/29か30（先方はどちらも可）。30日の午前で進める予定</li>
+        <li>調理場の見学はできません（お話を聞く時間です）</li>
+      </ul>
+    </div>
+
+    <div class="vb">
+      <div class="vb-h"><span class="b wait">調整中</span><b>BIO AUSTRIA（Annette Braun さん）</b></div>
+      <p class="vb-t">🎤 講演（日にち・時間は相談中）</p>
+      <p class="vb-d">オーストリアの有機農家の全国団体</p>
+      <ul class="dots">
+        <li>約13,000の農家が加盟（公式サイトより）</li>
+        <li>EUより厳しい独自の基準をつくり、有機の認証マークを運営</li>
+        <li>農家への助言・研修、政策への働きかけも行う</li>
+        <li>Braunさんは集団給食の担当。話してもらうのは、オーストリアの有機の仕組みと、公共の給食での広がり</li>
+        <li><small>講演はお受けいただいています</small></li>
+      </ul>
+    </div>
     <div class="grp" style="--ar:4/3">
       <figure><img src="images/wien_2.jpg" alt="Wien（ウィーン）"><figcaption>Wien（ウィーン）</figcaption></figure>
       <figure><img src="images/naschmarkt.jpg" alt="Wien（ウィーン）"><figcaption>Wien（ウィーン）</figcaption></figure>
     </div>
-    <p><budoux-ja>午後は、ウィーンの一般のスーパーと、オーガニックのスーパーを見て回りたいと考えています。オーストリアの人が毎日使う売り場で、有機の商品がどう並び、どう選ばれているかを見ます。有機の小売で見ておきたい店があれば、あわせて入れます。</budoux-ja></p>
+
+    <div class="vb">
+      <div class="vb-h"><span class="b und">未定</span><b>ウィーンのスーパー（一般＋オーガニック）</b></div>
+      <p class="vb-t">🛒 午後</p>
+      <ul class="dots">
+        <li>オーストリアの人が毎日使う売り場で、有機の商品がどう並び、どう選ばれているかを見る</li>
+        <li>有機の小売で見ておきたい店があれば、あわせて入れる</li>
+        <li><small>行く店と時間は、これから決めます</small></li>
+      </ul>
+    </div>
     <figure class="ph"><img src="images/super_billa.jpg" alt="ウィーンの一般のスーパー"><figcaption>ウィーンの一般のスーパーの例（BILLA）</figcaption></figure>
     <figure class="ph"><img src="images/super_denns.jpg" alt="ウィーンのオーガニックのスーパー"><figcaption>ウィーンのオーガニックのスーパーの例（denn's Biomarkt）</figcaption></figure>
-    <p class="cap"><budoux-ja>写真は例です。行く店は、これから決めます</budoux-ja></p>
-    <p><budoux-ja>そのあと、空港で解散します（帰りの便に合わせます）。</budoux-ja></p>
-    <p class="cap"><budoux-ja>写真はウィーンの市場のイメージです</budoux-ja></p>
-    <ul class="badges">
-      <li><span class="b wait">調整中</span><span><budoux-ja>ウィーン市の病院グループ：先方は了承ずみ。日にち（7/29か30）と部屋は、これから決めます</budoux-ja></span></li>
-      <li><span class="b wait">調整中</span><span><budoux-ja>BIO AUSTRIA の講演：お受けいただきました。日にちと時間は、先方と相談中です</budoux-ja></span></li>
-      <li><span class="b und">未定</span><span><budoux-ja>午後のスーパー（一般・オーガニック）：行く店と時間は、これから決めます</budoux-ja></span></li>
-    </ul>
+    <p class="cap">写真は例です。行く店は、これから決めます</p>
+
+    <p class="line">✈️ そのあと、空港で解散（帰りの便に合わせます）</p>
   </section>
 </div></section>
 
 <section class="band alt"><div class="in">
-  <h2><budoux-ja>旅費に入るもの、入らないもの</budoux-ja></h2>
+  <h2><budoux-ja>旅費</budoux-ja></h2>
   <div class="price">
     <p class="lbl">費用（お一人）</p>
     <div class="big">€3,500〜3,800</div>
     <div class="yen">約65〜70万円・航空券は別</div>
   </div>
-  <p class="pricenote" style="margin:-24px 0 8px"><budoux-ja>日本の旅行会社は PINK です。お申し込みとお支払いは PINK で受け付けます。</budoux-ja></p>
-  <p class="pricenote" style="margin:0 0 36px"><budoux-ja>航空券は、今のところトルコ航空を候補にしています。ほかの航空会社でも大丈夫です。集合時間と解散時間に間に合う便であれば。いずれも PINK での予約が条件です。</budoux-ja></p>
+  <p class="pricenote" style="margin:-24px 0 8px">円は1ユーロ＝185円で換算した目安です。</p>
+  <p class="pricenote" style="margin:0 0 36px">日本の旅行会社は PINK。お申し込みとお支払いは PINK で受け付けます。</p>
   <div class="two-col">
     <div class="box in-list">
-      <h3>費用に含まれるもの</h3>
+      <h3>含まれるもの</h3>
       <ul>
-        <li><budoux-ja>宿泊 5泊（朝食つき）</budoux-ja></li>
-        <li><budoux-ja>大型の貸切バス（運転手・燃料・高速料金込み。運転手の宿泊・食費も含む）</budoux-ja></li>
-        <li><budoux-ja>日本語の通訳（逐次通訳）（通訳の宿泊・食費・交通費も含む）</budoux-ja></li>
-        <li><budoux-ja>通訳用の無線ガイドシステム（6日間レンタル）：要相談です。人数が30人になる場合に必要かを考えています</budoux-ja></li>
-        <li><budoux-ja>視察先の見学料・入場料</budoux-ja></li>
-        <li><budoux-ja>夕食（全日程）</budoux-ja></li>
-        <li><budoux-ja>一部の昼食（SONNENTORの昼食など）</budoux-ja></li>
-        <li><budoux-ja>現地の宿泊税（観光税）</budoux-ja></li>
-        <li><budoux-ja>旅行会社（PINK）の手配・申込・集金の手数料</budoux-ja></li>
-        <li><budoux-ja>旅行会社が加入する死亡保険（お一人2,500万円）</budoux-ja></li>
+        <li>🏨 宿泊 5泊（朝食つき）</li>
+        <li>🚌 大型の貸切バス（運転手・燃料・高速料金込み。運転手の宿泊・食費も含む）</li>
+        <li>💬 日本語の通訳（逐次通訳。通訳の宿泊・食費・交通費も含む）</li>
+        <li>🎧 通訳用の無線ガイドシステム（6日間レンタル）：人数が30人になる場合に必要か検討中</li>
+        <li>🎟 視察先の見学料・入場料</li>
+        <li>🍽 夕食（全日程）</li>
+        <li>🍽 一部の昼食（SONNENTORの昼食など）</li>
+        <li>現地の宿泊税（観光税）</li>
+        <li>旅行会社（PINK）の手配・申込・集金の手数料</li>
+        <li>旅行会社が加入する死亡保険（お一人2,500万円）</li>
       </ul>
     </div>
     <div class="box out-list">
       <h3>含まれないもの</h3>
       <ul>
-        <li><budoux-ja>航空券（日本の旅行会社 PINK での予約が条件です）</budoux-ja></li>
-        <li><budoux-ja>上記以外の昼食、飲み物</budoux-ja></li>
-        <li><budoux-ja>個人的な費用（お土産・個人の買い物など）</budoux-ja></li>
-        <li><budoux-ja>任意の海外旅行傷害保険</budoux-ja></li>
+        <li>✈️ 航空券（PINK での予約が条件。今のところトルコ航空を候補に。集合・解散時間に間に合えば、ほかの航空会社も可）</li>
+        <li>上記以外の昼食、飲み物</li>
+        <li>個人的な費用（お土産・個人の買い物など）</li>
+        <li>任意の海外旅行傷害保険</li>
       </ul>
     </div>
   </div>
-  <p class="pricenote"><budoux-ja>上記は現時点の想定です。宿・訪問先の確定に合わせて、最終の内容をお知らせします。円の金額は1ユーロ=185円で換算した目安です。</budoux-ja></p>
 </div></section>
 
 <div class="in note">
-  <p>※ 日程・訪問先・含まれるものは、現時点の想定です。印のないものは確定ではありません。</p>
+  <p>※ 日程・訪問先・含まれるものは、現時点の想定です。印のないものは確定ではありません。宿・訪問先の確定に合わせて、最終の内容をお知らせします。</p>
   <p>※ 写真は、各訪問先の公式サイトなどの公開画像を使った参考のイメージです。</p>
   <p>※ スーパーの写真2枚は Wikimedia Commons より。「Billa-Supermarkt in Wien」（High Contrast・2010年撮影・<a href="https://creativecommons.org/licenses/by/3.0/de/deed.en">CC BY 3.0 DE</a>）、「Wien Taborstraße Denns BioMarkt」（Bioistgesund・2022年撮影・<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>）。</p>
 </div>
