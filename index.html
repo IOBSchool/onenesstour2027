@@ -210,6 +210,21 @@ p{margin:0 0 16px}
 .facts6 li{font-size:14.5px;line-height:1.85;padding:2px 0 2px 20px;position:relative}
 .facts6 li::before{content:"・";position:absolute;left:2px}
 .src{font-size:12px;line-height:1.8;color:var(--ink-soft);text-align:left;margin:12px 0 0}
+
+/* 主催者・旅の提供者 */
+.who{margin:0 0 34px}
+.who h3{font-family:var(--serif);font-weight:500;font-size:17px;letter-spacing:.14em;color:var(--brass-text);margin:0 0 18px;padding-bottom:10px;border-bottom:1px solid var(--brass)}
+.prof{display:flex;gap:20px;align-items:flex-start}
+.prof>img{flex:0 0 104px;width:104px;height:104px;border-radius:50%;object-fit:cover;border:1px solid var(--hair)}
+.prof .logo{flex:0 0 104px;width:104px;height:104px;border-radius:50%;background:var(--forest);display:flex;align-items:center;justify-content:center}
+.prof .logo img{width:64px;height:auto;border:0;border-radius:0}
+.prof .name{font-family:var(--serif);font-weight:500;font-size:19px;line-height:1.6;letter-spacing:.08em;color:var(--forest);margin:0}
+.prof .role{font-size:12.5px;line-height:1.8;color:var(--ink-soft);margin:2px 0 12px}
+.prof p{margin:0 0 12px;font-size:15px;line-height:1.95}
+.prof>div:last-child{min-width:0;flex:1 1 auto;overflow-wrap:anywhere}
+@media (max-width:560px){.prof{flex-direction:column;gap:14px}.prof>img,.prof .logo{flex-basis:auto;width:88px;height:88px}.prof .logo img{width:56px}}
+.interest{margin:14px 0 0;padding-left:1.2em;font-size:14.5px;line-height:1.9;color:var(--ink-soft)}
+.apply-last{margin:8px 0 0;padding:18px 0 0;border-top:1px solid var(--hair);font-family:var(--serif);font-size:16px;line-height:1.95;letter-spacing:.06em;color:var(--forest);text-align:center}
 </style>
 </head>
 <body>
@@ -220,11 +235,11 @@ p{margin:0 0 16px}
   <p class="ask">何を守り、<br>何を変え、<br>次の世代に何を残すのか。</p>
   <p class="sub"><budoux-ja>品質を守りながら、どう商売を続けていくのか。オーストリアのオーガニック・サステナブルな食品づくりの現場を訪ね、原料、生産、価格、販売に込められた経営判断を、自社のこれからと重ねて考える6日間。</budoux-ja></p>
   <ul class="meta">
-    <li>📅 <b>2027年7月25日（日）〜7月30日（金）</b>｜5泊6日</li>
+    <li>📅 <b>2027年7月25日（日）〜7月30日（金）</b>（予定）｜5泊6日</li>
     <li>📍 ウィーン発着</li>
-    <li>👥 最少17名・最大30名</li>
+    <li>👥 最少17名（予定）・最大30名｜最少人数に満たない場合の扱いは確認中</li>
     <li>🚌 全行程 貸切バス・日本語通訳つき</li>
-    <li>📝 お申し込み：2027年1月（予定）から3月末まで（日本の旅行会社PINK経由）</li>
+    <li>📝 お申し込み：2027年1月（予定）から3月末まで（日本の旅行会社PINK経由の予定）｜現在は受付前です</li>
   </ul>
 </div></header>
 
@@ -640,12 +655,12 @@ p{margin:0 0 16px}
 <section class="band alt"><div class="in">
   <h2><budoux-ja>旅費</budoux-ja></h2>
   <div class="price">
-    <p class="lbl">費用（お一人）</p>
+    <p class="lbl">費用（お一人）｜目安・確認中</p>
     <div class="big">€3,500〜3,800</div>
-    <div class="yen">約62〜67万円・航空券は別</div>
+    <div class="yen">約62〜67万円・航空券は別（目安・確認中）</div>
   </div>
-  <p class="pricenote" style="margin:-24px 0 8px">円は1ユーロ＝176円（2026年11月19日の欧州中央銀行の基準値）で換算した目安です。為替によって変わります。</p>
-  <p class="pricenote" style="margin:0 0 36px">日本の旅行会社は PINK。お申し込みは2027年1月（予定）から3月末まで、日本の旅行会社PINK経由で受け付けます。お支払いも PINK で受け付けます。</p>
+  <p class="pricenote" style="margin:-24px 0 8px">この金額は確定前の目安で、旅行会社PINKと確認中です。変わることがあります。円は1ユーロ＝176円（2026年11月19日の欧州中央銀行の基準値）で換算した目安で、為替によっても変わります。</p>
+  <p class="pricenote" style="margin:0 0 36px">日本の旅行会社は PINK。お申し込みは2027年1月（予定）から3月末まで、日本の旅行会社PINK経由での受付を予定しています（現在は受付前です）。お支払い先も PINK の予定で、お支払いの時期・割合は確認中です。</p>
   <div class="two-col">
     <div class="box in-list">
       <h3>含まれるもの</h3>
@@ -659,19 +674,57 @@ p{margin:0 0 16px}
         <li>🍽 一部の昼食（SONNENTORの昼食など）</li>
         <li>現地の宿泊税（観光税）</li>
         <li>旅行会社（PINK）の手配・申込・集金の手数料</li>
-        <li>旅行会社が加入する死亡保険（お一人2,500万円）</li>
+        <li>旅行会社が加入する死亡保険（お一人2,500万円）※予定。正式な名称と内容は確認中</li>
       </ul>
     </div>
     <div class="box out-list">
       <h3>含まれないもの</h3>
       <ul>
-        <li>✈️ 航空券（PINK での予約が条件。今のところトルコ航空を候補に。集合・解散時間に間に合えば、ほかの航空会社も可）</li>
+        <li>✈️ 航空券（今のところトルコ航空を候補に。集合・解散時間に間に合えば、ほかの航空会社も可。手配の方法は確認中）</li>
         <li>上記以外の昼食、飲み物</li>
         <li>個人的な費用（お土産・個人の買い物など）</li>
         <li>任意の海外旅行傷害保険</li>
       </ul>
     </div>
   </div>
+</div></section>
+
+
+<section class="band"><div class="in">
+  <h2><budoux-ja>関心のある方へ</budoux-ja></h2>
+  <p>上の目安の金額（確定前・航空券別）を見たうえで、参加を検討したい方は、件名を「視察ツアー案内希望」として <a href="mailto:natsuko@iob.bio?subject=%E8%A6%96%E5%AF%9F%E3%83%84%E3%82%A2%E3%83%BC%E6%A1%88%E5%86%85%E5%B8%8C%E6%9C%9B">natsuko@iob.bio</a> へお送りください。本文には、「条件が確定したときの案内を希望します」と、お名前、会社名、検討している人数をお書きください。</p>
+  <ul class="interest">
+    <li>申込や仮予約ではありません。席の確保や、先着の順番にもなりません。費用も発生しません。</li>
+    <li>お預かりした内容は、条件が確定したときのご案内にのみ使います。申込のときは、ご自身で旅行会社PINKへお伝えいただきます。</li>
+    <li>ご案内の停止や、内容の削除をご希望のときも、このアドレスへご連絡ください。</li>
+  </ul>
+</div></section>
+<section class="band alt"><div class="in">
+  <div class="who">
+    <h3>旅の企画とナビゲーター</h3>
+    <div class="prof">
+      <img src="images/natsuko_profile.jpg" alt="レムケなつこ">
+      <div>
+        <p class="name">レムケなつこ</p>
+        <p class="role">ドイツ法人オーガニックビジネス研究所（IOB）代表／オーガニック教育の専門家</p>
+        <p>慶應義塾大学経済学部を卒業後、ボリビアでJICA青年海外協力隊、メキシコでJICA専門家として、途上国の生産者支援に携わる。その現場での気づきからオーガニックに出会い、2009年に渡独。ドイツ政府給付型奨学金（DAAD）でホーヘンハイム大学大学院にて有機農業を専攻し、修士号を取得。オーガニックセクターの国際組織IFOAM – Organics Internationalのリーダーシップ研修に、日本人として初めて選抜される。</p>
+        <p>2017年に教育事業を始め、IOBは延べ1,900人以上が学ぶコミュニティに。農林水産省の助成を受けた日本の有機生産者とドイツ人バイヤーの商談会（2018年）、ビオファジャパン第1回の企画実施（2024年）、信濃屋Onenessコミュニティ共催の北海道オーガニックツアー（2026年）など、日本とヨーロッパのオーガニック市場をつなぐ事業を続けています。</p>
+        <p>この旅では、行程の企画と、視察中の夜の対話の進行を担当します。</p>
+      </div>
+    </div>
+  </div>
+  <div class="who">
+    <h3>旅の提供者</h3>
+    <div class="prof">
+      <span class="logo"><img src="images/pink_logo.png" alt="Love＆Travel PINK のロゴ"></span>
+      <div>
+        <p class="name">Love＆Travel PINK</p>
+        <p class="role">アスパック企業株式会社 旅行事業部</p>
+        <p>2008年の設立。母体は、オーガニック＆ナチュラルなセレクトショップ「TRUE NATURAL」を展開するアスパック企業株式会社です。作家・シェフ・ヨガ講師などのオーガナイザーを迎えたオリジナルのグループツアーや、ホテルにこだわったオーダーメイドの旅を手がけています。</p>
+      </div>
+    </div>
+  </div>
+  <p class="apply-last">2027年1月から、旅行会社PINKを経由して、お申し込みが始まります（予定）。</p>
 </div></section>
 
 <div class="in note">
