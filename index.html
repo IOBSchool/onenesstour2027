@@ -221,6 +221,12 @@ h4{font-family:var(--serif);font-weight:700;margin:0;text-wrap:balance}
 .prod-lbl{padding:14px 18px 20px;background:var(--card)}
 .prod-lbl .pc{display:block;font-size:13.5px;line-height:1.6;letter-spacing:.1em;color:var(--terra-d);font-weight:700}
 .prod-lbl .pj{display:block;font-family:var(--serif);font-weight:700;font-size:18px;line-height:1.7;margin-top:4px;color:var(--brown)}
+.prod-grid{border-top:1px solid var(--line);background:var(--card);padding:16px 14px 20px}
+.prod-grid .pg-t{font-size:13.5px;line-height:1.6;letter-spacing:.1em;color:var(--terra-d);font-weight:700;margin:0 4px 12px}
+.prod-grid .pg-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.prod-grid figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.prod-grid img{display:block;width:100%;height:230px;object-fit:contain;background:#fff;padding:10px 0 4px}
+.prod-grid figcaption{padding:8px 10px 12px;font-size:14px;line-height:1.7;color:var(--brown)}
 
 /* 畳む部分 */
 details.more{margin:6px 0 0}
@@ -665,7 +671,7 @@ p,li,td{text-wrap:pretty}
 <!-- 4日目 -->
 <section class="day d-even" id="day4" style="--dc:#2f7a70">
   <div class="dhero"><img src="images/sonnentor_2.jpg" alt="SONNENTOR" loading="lazy">
-    <div class="in"><p class="dl"><span class="dn">4日目</span><span class="dd">7/28（水）</span></p><h3><budoux-ja>ハーブとお茶の会社で、一日を過ごす</budoux-ja></h3></div></div>
+    <div class="in"><p class="dl"><span class="dn">4日目</span><span class="dd">7/28（水）</span></p><h3><budoux-ja>ハーブとお茶の会社を、じっくり見る</budoux-ja></h3></div></div>
   <div class="dbody"><div class="in">
     <article class="visit">
       <div class="v-head">
@@ -736,7 +742,13 @@ p,li,td{text-wrap:pretty}
           </div>
         </details>
       </div>
-      <div class="prod"><img class="cover" src="images/prod_landgarten_choco.jpg" alt="Landgarten" loading="lazy"><div class="prod-lbl"><span class="pc">代表的な商品のひとつ</span><span class="pj"><budoux-ja>日本を含む30か国以上に出荷（ブランド紹介による）</budoux-ja></span></div></div>
+      <div class="prod"><img class="cover" src="images/prod_landgarten_choco.jpg" alt="Landgarten" loading="lazy"><div class="prod-lbl"><span class="pc">ベリーの3種チョコ</span><span class="pj"><budoux-ja>日本を含む30か国以上に出荷（ブランド紹介による）</budoux-ja></span></div></div>
+      <div class="prod-grid"><p class="pg-t">ほかにも、こんな商品があります</p><div class="pg-list">
+        <figure><img src="images/prod_lg_soy.jpg" alt="Landgarten 大豆のスナック" loading="lazy"><figcaption><budoux-ja>大豆のスナック（ロースト）</budoux-ja></figcaption></figure>
+        <figure><img src="images/prod_lg_mix.png" alt="Landgarten スナックミックス" loading="lazy"><figcaption><budoux-ja>大豆・かぼちゃの種・ひまわりの種のミックス</budoux-ja></figcaption></figure>
+        <figure><img src="images/prod_lg_cashew.jpg" alt="Landgarten カシューナッツ" loading="lazy"><figcaption><budoux-ja>カシューナッツ（スパイシー味）</budoux-ja></figcaption></figure>
+        <figure><img src="images/prod_lg_kuerbis.png" alt="Landgarten かぼちゃの種のチョコ" loading="lazy"><figcaption><budoux-ja>かぼちゃの種のビターチョコがけ</budoux-ja></figcaption></figure>
+      </div></div>
     </article>
 
     <article class="visit">
@@ -744,7 +756,7 @@ p,li,td{text-wrap:pretty}
         <div class="st"><span class="b wait">調整中</span></div>
         <h4><budoux-ja>PANNATURA（国内最大の有機農業法人）</budoux-ja></h4>
         <p class="v-time"><budoux-ja>午後（3時間半〜4時間）</budoux-ja></p>
-        <p class="v-one"><budoux-ja>Bio-Landgut Esterházy。2002年から、自社で耕す畑をすべて有機で営んでいる農場</budoux-ja></p>
+        <p class="v-one"><budoux-ja>Bio-Landgut Esterházy。2002年から、自社で耕す畑をすべて有機で営んでいる農場。2,100ヘクタール（東京ドーム約450個分）を有機で営む、国内最大の有機農業法人</budoux-ja></p>
       </div>
       <figure class="v-photo"><img src="images/pannatura_4.jpg" alt="PANNATURA" loading="lazy"><figcaption>PANNATURA</figcaption></figure>
       <div class="v-body">
@@ -780,7 +792,7 @@ p,li,td{text-wrap:pretty}
       <div class="stay-name"><span class="b ok">確定</span><h4><budoux-ja>MOOONS Vienna<span class="nw">（ウィーン中央駅の向かい）</span></budoux-ja></h4></div>
       <ul class="dots">
         <li><budoux-ja>2019年開業のデザインホテル。テーマは月と宇宙。屋上に庭とバー</budoux-ja></li>
-        <li><budoux-ja>30室・契約が成立</budoux-ja></li>
+        <li><budoux-ja>契約・予約に関することは、変更がある可能性があります</budoux-ja></li>
       </ul>
       <details class="more"><summary>写真をもっと見る</summary>
         <div class="more-photos">
