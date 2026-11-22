@@ -271,6 +271,8 @@ details.more[open]>summary{margin-bottom:14px}
 .box h3{font-size:20px;line-height:1.5;color:var(--brown);margin:0 0 6px;padding-bottom:12px;border-bottom:3px solid var(--terra);letter-spacing:.06em}
 .box.out-list h3{border-bottom-color:#a89880;color:var(--ink-soft)}
 .box ul{margin:0;padding:0;list-style:none}
+.box .grp{margin:20px 0 0;font-size:14px;line-height:1.6;letter-spacing:.1em;font-weight:700;color:var(--terra-d)}
+.box .grp:first-of-type{margin-top:14px}
 .box li{position:relative;padding:12px 0 12px 32px;border-bottom:1px solid var(--line);font-size:16px;line-height:1.85}
 .box.in-list li::before{content:"";position:absolute;left:6px;top:1.05em;width:7px;height:13px;border-right:2.5px solid var(--terra);border-bottom:2.5px solid var(--terra);transform:rotate(45deg)}
 .box.out-list li{color:var(--ink-soft)}
@@ -909,14 +911,23 @@ p,li,td{text-wrap:pretty}
   <div class="two-col">
     <div class="box in-list">
       <h3>含まれるもの</h3>
+      <p class="grp">泊まる・食べる</p>
       <ul>
-        <li><budoux-ja>宿泊 5泊（朝食つき）</budoux-ja></li>
+        <li><budoux-ja>宿泊 5泊（朝食つき）と、現地の宿泊税（観光税）</budoux-ja></li>
         <li><budoux-ja>夕食（1〜5日目。6日目は空港で解散のため含みません）</budoux-ja></li>
+        <li><budoux-ja>一部の昼食（SONNENTORの昼食など）</budoux-ja></li>
+      </ul>
+      <p class="grp">移動する・伝える</p>
+      <ul>
         <li><budoux-ja>大型の貸切バス（運転手・燃料・高速料金込み。運転手の宿泊・食費も含む）</budoux-ja></li>
         <li><budoux-ja>日本語の通訳（逐次通訳。通訳の宿泊・食費・交通費も含む）</budoux-ja></li>
+      </ul>
+      <p class="grp">見学する</p>
+      <ul>
         <li><budoux-ja>視察先の見学料・入場料</budoux-ja></li>
-        <li><budoux-ja>一部の昼食（SONNENTORの昼食など）</budoux-ja></li>
-        <li><budoux-ja>現地の宿泊税（観光税）</budoux-ja></li>
+      </ul>
+      <p class="grp">手配・保険</p>
+      <ul>
         <li><budoux-ja>旅行会社（PINK）の手配・申込・集金の手数料</budoux-ja></li>
         <li><budoux-ja>旅行会社が加入する死亡保険（お一人2,500万円）※予定。正式な名称と内容は確認中</budoux-ja></li>
       </ul>
