@@ -215,6 +215,22 @@ h4{font-family:var(--serif);font-weight:700;margin:0;text-wrap:balance}
 .dots li{position:relative;padding:9px 0 9px 22px;font-size:16px;line-height:1.9;border-bottom:1px solid var(--line)}
 .dots li:last-child{border-bottom:0}
 .dots li::before{content:"";position:absolute;left:3px;top:1.45em;width:6px;height:6px;background:var(--terra);transform:rotate(45deg)}
+.wow{margin:0 0 22px;padding:16px 16px 6px;background:var(--cream2);border-radius:12px;border-top:4px solid var(--dc,var(--terra))}
+.wow-h{margin:0 0 6px;font-size:13px;letter-spacing:.14em;font-weight:700;color:var(--terra-d)}
+.wow-l{list-style:none;margin:0 0 10px;padding:0;counter-reset:w}
+.wow-l li{counter-increment:w;position:relative;padding:13px 0 13px 36px;border-top:1px solid var(--line)}
+.wow-l li:first-child{border-top:0}
+.wow-l li::before{content:counter(w);position:absolute;left:0;top:15px;width:25px;height:25px;border-radius:50%;background:var(--terra);color:#fff;font-size:13px;font-weight:700;text-align:center;line-height:25px;font-family:var(--serif)}
+.wow-l b{display:block;font-family:var(--serif);font-size:17px;line-height:1.7;color:var(--brown);margin:0 0 2px}
+.wow-l span{display:block;font-size:15px;line-height:1.85;color:var(--ink)}
+.do-h{margin:0 0 2px;font-size:13px;letter-spacing:.14em;font-weight:700;color:var(--terra-d)}
+.learn{margin:4px 0 20px;padding:14px 14px 15px;border-left:4px solid var(--terra);background:var(--card);font-size:15.5px;line-height:1.9;color:var(--brown)}
+.learn em{display:block;font-style:normal;font-size:12.5px;letter-spacing:.14em;font-weight:700;color:var(--terra-d);margin:0 0 3px}
+.dstay .wow-h{color:var(--terra-l);margin:14px 0 4px}
+.dstay .wow-l li{border-top-color:rgba(232,220,199,.25)}
+.dstay .wow-l li::before{background:var(--terra-l);color:var(--brown)}
+.dstay .wow-l b{color:var(--cream)}
+.dstay .wow-l span{color:var(--brown-soft)}
 .dots li small{display:block;font-size:13px;line-height:1.8;color:var(--ink-soft)}
 .dots li.note-s::before{display:none}
 .dots li.note-s{padding-left:0}
@@ -399,8 +415,8 @@ p,li,td{text-wrap:pretty}
       <span class="no">1</span>
       <h3><budoux-ja>品質や信念を守りながら、商売を続けるための選択を見る</budoux-ja></h3>
       <p class="lead-line"><budoux-ja>チョコ・酢・ワイン・ハーブ・お茶・スパイス・スナック</budoux-ja></p>
-      <p><budoux-ja>原料の選び方、つくり方、売り方、次の世代への渡し方を、同じ食品のつくり手の立場から見ます。可能な訪問先では、経営に近い方との対話も依頼しています。</budoux-ja></p>
-      <p class="why-line"><budoux-ja>見る所：Zotter／Gölles／Nikolaihof／SONNENTOR／Landgarten</budoux-ja></p>
+      <p><budoux-ja>原料の選び方、つくり方、売り方、次の世代への渡し方を、同じ食品のつくり手の立場から、現地で見ます。訪問先によっては、経営に近い方と話せる場合があります。</budoux-ja></p>
+      <p class="why-line">見る所</p><div class="lead-rows"><p><budoux-ja>Zotter：チョコレートの「劇場」に、年間最大29万人が訪れる（同社発表）</budoux-ja></p><p><budoux-ja>Gölles：100mlで90ユーロ（約1.6万円）の、りんごのバルサミコ酢</budoux-ja></p><p><budoux-ja>Nikolaihof：オーストリア最古のワイナリーを名乗る。同国のワインで初の100点</budoux-ja></p><p><budoux-ja>SONNENTOR：人口約100人の村から、世界50か国超へ</budoux-ja></p><p><budoux-ja>Landgarten：油を使わず熱風で焙煎する、大豆スナック</budoux-ja></p></div>
       <p class="take"><em>自社に持ち帰る問い</em><budoux-ja><span class="hl">自社は、何を守るために、何を変えるのか。</span></budoux-ja></p>
     </div>
   </article>
@@ -410,9 +426,9 @@ p,li,td{text-wrap:pretty}
     <div class="vp-in">
       <span class="no">2</span>
       <h3><budoux-ja>原料をつくる畑の側から、有機を支える仕組みを知る</budoux-ja></h3>
-      <p class="lead-line"><budoux-ja>2002年から全面有機の大農場／ビオディナミのワイナリー</budoux-ja></p>
+      <p class="lead-line"><budoux-ja>作曲家ハイドンの主家が受け継ぐ、約2,100ヘクタールの有機農場／ビオディナミを50年以上続けるワイナリー</budoux-ja></p>
       <p><budoux-ja>自社の原料になる畑で、有機がどう続けられているかを知ります。</budoux-ja></p>
-      <p class="why-line"><budoux-ja>見る所：PANNATURA（国内最大の有機農業法人・調整中）／Nikolaihof</budoux-ja></p>
+      <p class="why-line"><budoux-ja>見る所：PANNATURA／Nikolaihof</budoux-ja></p>
       <p class="take"><em>自社に持ち帰る問い</em><budoux-ja><span class="hl">自社の原料と生産は、この先も続けられる形になっているか。</span></budoux-ja></p>
     </div>
   </article>
@@ -422,10 +438,10 @@ p,li,td{text-wrap:pretty}
     <div class="vp-in">
       <span class="no">3</span>
       <h3><budoux-ja>有機食品が選ばれる背景にある、買い手の基準と仕組みを知る</budoux-ja></h3>
-      <div class="lead-rows"><p><budoux-ja>ウィーン市の公共施設（幼稚園・学校・病院・高齢者施設）：1日10万食以上</budoux-ja></p><p><budoux-ja>有機の割合：幼稚園60%・学校50%・病院 約3分の1・高齢者施設 約35%</budoux-ja></p><p><budoux-ja>市の有機水準は、全体で最低30%（1998年〜）→ 2026年40%以上 → 2030年55%以上へ引き上げる計画</budoux-ja></p></div>
-      <p><budoux-ja>ウィーン市の公共調達や、有機の基準・認証マークをつくる全国団体を通じて、品質や価値がどう評価され、調達の判断につながっているのかを探ります。担当者・団体へのヒアリングは調整中です。</budoux-ja></p>
+      <div class="lead-rows"><p><budoux-ja>ウィーン市の公共施設（幼稚園・学校・病院・高齢者施設）：毎日約12万食</budoux-ja></p><p><budoux-ja>有機の割合：幼稚園60%・学校50%・病院 約3分の1・高齢者施設 約35%</budoux-ja></p><p><budoux-ja>市の有機水準は、全体で最低30%（1998年〜）→ 2026年40%以上 → 2030年55%以上へ引き上げる計画</budoux-ja></p></div>
+      <p><budoux-ja>ウィーン市の公共調達や、有機の基準・認証マークをつくる全国団体を通じて、品質や価値がどう評価され、調達の判断につながっているのかを探ります。ウィーン市の担当者と BIO AUSTRIA の方に、話を聞く予定です。</budoux-ja></p>
       <p><budoux-ja>公共の給食は、メーカーにも小売にも関われる分野です。</budoux-ja></p>
-      <p class="why-line"><budoux-ja>聞く所：ウィーン市の公共調達／BIO AUSTRIA（オーストリア全国有機農業団体）（ともに日時を調整中）</budoux-ja></p>
+      <p class="why-line"><budoux-ja>聞く所：ウィーン市の公共調達／BIO AUSTRIA（オーストリア全国有機農業団体）</budoux-ja></p>
       <p class="take"><em>自社に持ち帰る問い</em><budoux-ja><span class="hl">自社の商品は、どんな基準と価値で選ばれているのか。</span></budoux-ja></p>
     </div>
   </article>
@@ -436,7 +452,7 @@ p,li,td{text-wrap:pretty}
       <span class="no">4</span>
       <h3><budoux-ja>商品の価値と価格が、本国の売場でどう伝わっているかを確かめる</budoux-ja></h3>
       <p class="lead-line"><budoux-ja>現地の一般スーパーとオーガニックスーパーで、有機の商品がどう並び、選ばれているかを見る</budoux-ja></p>
-      <p><budoux-ja>日本でも買えるメーカー（Zotter・Gölles・Nikolaihof・SONNENTORなど）の本国での姿を見たうえで、一般スーパーとオーガニックスーパーの売場を訪れ、商品の並び方、価格、選ばれ方を自社の商品と照らし合わせます。</budoux-ja></p>
+      <p><budoux-ja>Zotter・Gölles・Nikolaihof・SONNENTORなどの本国での姿を見たうえで、一般スーパーとオーガニックスーパーの売場を訪れ、商品の並び方、価格、選ばれ方を自社の商品と照らし合わせます。</budoux-ja></p>
       <p class="why-line"><budoux-ja>見る所：各メーカー／ウィーン市内のスーパー<span class="nw">（店は未定）</span></budoux-ja></p>
       <p class="take"><em>自社に持ち帰る問い</em><budoux-ja><span class="hl">自社の商品の価値と価格は、売場でどう伝わっているか。</span></budoux-ja></p>
     </div>
@@ -462,7 +478,7 @@ p,li,td{text-wrap:pretty}
 <section class="night dk"><div class="in">
   <h2 data-l="04 ／ NIGHT"><budoux-ja>視察中に2回、参加する仲間と語る夜</budoux-ja></h2>
   <ul>
-    <li><budoux-ja>視察中の2晩、夕食のあとに1時間ほど（会議室を借りられる宿の夜に行います。日は調整中）</budoux-ja></li>
+    <li><budoux-ja>視察中の2晩、夕食のあとに1時間ほど（会議室のある宿に泊まる夜に行います）</budoux-ja></li>
     <li><budoux-ja>視察を自社の経営判断につなげる大切な時間として、原則ご参加いただきます</budoux-ja></li>
     <li><budoux-ja>その日に見たことと、4つの視点の<span class="nw">「自社に持ち帰る問い」</span>を、3つの質問に照らして、少人数で話します</budoux-ja></li>
   </ul>
@@ -479,11 +495,11 @@ p,li,td{text-wrap:pretty}
     <div class="lg"><span class="b und">未定</span><span><budoux-ja>決まっていません</budoux-ja></span></div>
   </div>
   <div class="gl" style="--dc:#c4622d"><div class="gd"><b>1日目</b><span>7/25（日）</span></div><div class="gi"><div><span class="b hold">仮押さえ</span><span><budoux-ja>ウィーン着・宿へ移動<span class="nw">（バス・通訳）</span></budoux-ja></span></div></div></div>
-  <div class="gl" style="--dc:#b4821f"><div class="gd"><b>2日目</b><span>7/26（月）</span></div><div class="gi"><div><span class="b ok">確定</span><span><budoux-ja>Zotter（国内代表メーカー「チョコレート」）</budoux-ja></span></div><div><span class="b ok">確定</span><span><budoux-ja>Gölles（国内代表メーカー「酢・蒸留酒」）</budoux-ja></span></div></div></div>
-  <div class="gl" style="--dc:#6f8a3f"><div class="gd"><b>3日目</b><span>7/27（火）</span></div><div class="gi"><div><span class="b ok">確定</span><span><budoux-ja>Nikolaihof<span class="sb">（国内最古のワイナリー）</span></budoux-ja></span></div><div><span class="b wait">調整中</span><span><budoux-ja>ほかの訪問先</budoux-ja></span></div></div></div>
-  <div class="gl" style="--dc:#2f7a70"><div class="gd"><b>4日目</b><span>7/28（水）</span></div><div class="gi"><div><span class="b wait">調整中</span><span><budoux-ja>SONNENTOR<span class="sb">（国内代表メーカー「ハーブ・お茶」）</span></budoux-ja></span></div><div><span class="b wait">調整中</span><span><budoux-ja>ほかの訪問先</budoux-ja></span></div></div></div>
-  <div class="gl" style="--dc:#8f5278"><div class="gd"><b>5日目</b><span>7/29（木）</span></div><div class="gi"><div><span class="b hold">仮押さえ</span><span><budoux-ja>Landgarten<span class="sb">（国内代表メーカー「菓子類」）</span></budoux-ja></span></div><div><span class="b wait">調整中</span><span><budoux-ja>PANNATURA<span class="sb">（国内最大の有機農業法人）</span></budoux-ja></span></div></div></div>
-  <div class="gl" style="--dc:#4f6590"><div class="gd"><b>6日目</b><span>7/30（金）</span></div><div class="gi"><div><span class="b wait">調整中</span><span><budoux-ja>ウィーン市<span class="sb">（公共調達関連部署）</span></budoux-ja></span></div><div><span class="b wait">調整中</span><span><budoux-ja>BIO AUSTRIA<span class="sb">（オーストリア全国有機農業団体）</span></budoux-ja></span></div><div><span class="b und">未定</span><span><budoux-ja>ウィーンのスーパー</budoux-ja></span></div></div></div>
+  <div class="gl" style="--dc:#b4821f"><div class="gd"><b>2日目</b><span>7/26（月）</span></div><div class="gi"><div><span class="b ok">確定</span><span><budoux-ja>Zotter<span class="sb">（チョコレートの劇場に、年間最大29万人）</span></budoux-ja></span></div><div><span class="b ok">確定</span><span><budoux-ja>Gölles<span class="sb">（100mlで90ユーロの、りんごのバルサミコ酢）</span></budoux-ja></span></div></div></div>
+  <div class="gl" style="--dc:#6f8a3f"><div class="gd"><b>3日目</b><span>7/27（火）</span></div><div class="gi"><div><span class="b ok">確定</span><span><budoux-ja>Nikolaihof<span class="sb">（オーストリア最古のワイナリーを名乗る）</span></budoux-ja></span></div><div><span class="b wait">調整中</span><span><budoux-ja>ほかの訪問先（追加の予定）</budoux-ja></span></div></div></div>
+  <div class="gl" style="--dc:#2f7a70"><div class="gd"><b>4日目</b><span>7/28（水）</span></div><div class="gi"><div><span class="b wait">調整中</span><span><budoux-ja>SONNENTOR<span class="sb">（人口約100人の村から、世界50か国超へ）</span></budoux-ja></span></div><div><span class="b wait">調整中</span><span><budoux-ja>ほかの訪問先（追加の予定）</budoux-ja></span></div></div></div>
+  <div class="gl" style="--dc:#8f5278"><div class="gd"><b>5日目</b><span>7/29（木）</span></div><div class="gi"><div><span class="b hold">仮押さえ</span><span><budoux-ja>Landgarten<span class="sb">（熱風で焙煎する大豆スナック）</span></budoux-ja></span></div><div><span class="b wait">調整中</span><span><budoux-ja>PANNATURA<span class="sb">（ハイドンの主家が受け継ぐ有機農場）</span></budoux-ja></span></div></div></div>
+  <div class="gl" style="--dc:#4f6590"><div class="gd"><b>6日目</b><span>7/30（金）</span></div><div class="gi"><div><span class="b wait">調整中</span><span><budoux-ja>ウィーン市<span class="sb">（毎日約12万食の公共給食）</span></budoux-ja></span></div><div><span class="b wait">調整中</span><span><budoux-ja>BIO AUSTRIA<span class="sb">（約12,000軒の有機農家が加盟）</span></budoux-ja></span></div><div><span class="b und">未定</span><span><budoux-ja>ウィーンのスーパー</budoux-ja></span></div></div></div>
   <p class="glance-note"><budoux-ja>印は、その訪問先の今の状態です。印のない所は、確定ではありません。</budoux-ja></p>
 </div></section>
 
@@ -518,15 +534,12 @@ p,li,td{text-wrap:pretty}
     <figure class="stay-photo"><img src="images/retter_2.jpg" alt="RETTER" loading="lazy"><figcaption>RETTER</figcaption></figure>
     <div class="in stay-in">
       <div class="stay-name"><span class="b und">未定</span><h4><budoux-ja>RETTER Bio-Natur-Resort（シュタイアーマルク州・Pöllauberg）</budoux-ja></h4></div>
-      <p class="stay-status"><budoux-ja>こちらの宿泊先は団体予約に厳しい条件があり、今後宿泊先に変更が生じる可能性があります。4月にお申し込み済みの皆さまへ結果をご報告します</budoux-ja></p>
-      <ul class="dots">
-        <li><budoux-ja>オーストリアのビオホテル。1886年に農家を買った家族が始め、いまも家族経営</budoux-ja></li>
-        <li><budoux-ja>料理は認証つきの有機。自分たちの有機農場の作物を、自分たちで加工</budoux-ja></li>
-        <li><budoux-ja>2013年、オーストリアで初めて Green Globe と環境ラベルの両方を取得</budoux-ja></li>
-      </ul>
+      <p class="stay-status"><budoux-ja>RETTERは団体予約の条件が厳しく、宿泊先が変わる可能性があります。変わる場合は、4月に、お申し込み済みの皆さまへ結果をご報告します。</budoux-ja></p>
+      <p class="wow-h">ここがすごい！3つのポイント</p>
+<ol class="wow-l"><li><b><budoux-ja>女将が、2025年の「オーストリア年間最優秀ホスト」に</budoux-ja></b><span><budoux-ja>美食ガイド Gault&Millau の2025年版で、女将の Ulli Retterさんが選ばれました（経済会議所の記事より）。</budoux-ja></span></li><li><b><budoux-ja>オーストリアのホテルで初めて、環境認証を2つ取得</budoux-ja></b><span><budoux-ja>2013年に、国際認証 Green Globe と、オーストリアの環境ラベルの両方を取りました。宿は気候中立です。</budoux-ja></span></li><li><b><budoux-ja>1886年から続く、家族の有機農場の宿</budoux-ja></b><span><budoux-ja>家族が農家を買って始め、いまも家族経営です。料理は、自分たちの有機農場の作物を、自分たちで加工してつくります。</budoux-ja></span></li></ol>
       <details class="more"><summary>写真と認証の詳細を見る</summary>
         <div class="more-body">
-          <ul class="dots"><li class="note-s"><budoux-ja><small>有機の認証：農場は1990年から、レストランは2004年から。2024年から BIO HOTELS と Slow Food Österreich の会員（宿の公式サイトより）</small></budoux-ja></li></ul>
+          <ul class="dots"><li class="note-s"><budoux-ja><small>有機の認証：農場は1990年から、レストランは2004年から。2024年から BIO HOTELS と Slow Food Österreich の会員（宿の公式サイトより）。そのほか、Gault&Millau で1ハウベ、Falstaff で2フォーク（観光案内サイトより）。2023年に約1,700万ユーロをかけて宿を拡張しました</small></budoux-ja></li></ul>
           <div class="more-photos">
             <figure><img src="images/retter_3.jpg" alt="RETTER" loading="lazy"><figcaption>RETTER</figcaption></figure>
             <figure><img src="images/retter_4.jpg" alt="RETTER" loading="lazy"><figcaption>RETTER</figcaption></figure>
@@ -548,17 +561,17 @@ p,li,td{text-wrap:pretty}
     <article class="visit">
       <div class="v-head">
         <div class="st"><span class="b ok">確定</span></div>
-        <h4><budoux-ja>Zotter<span class="sb">（国内代表メーカー「チョコレート」）</span></budoux-ja></h4>
+        <h4><budoux-ja>Zotter<span class="sb">（チョコレート）</span></budoux-ja></h4>
         <p class="v-time"><budoux-ja>10:00〜（約3時間）</budoux-ja></p>
-        <p class="v-one"><budoux-ja>有機・フェアトレードのチョコレートメーカー</budoux-ja></p>
+        <p class="v-one"><budoux-ja>有機・フェアトレードの原料だけで、チョコレートをつくるメーカー。工場が、見て・食べて楽しむ「チョコレートの劇場」になっています。</budoux-ja></p>
       </div>
       <figure class="v-photo"><img src="images/zotter_3.jpg" alt="Zotter" loading="lazy"><figcaption>Zotter</figcaption></figure>
       <div class="v-body">
-        <ul class="dots">
-          <li><budoux-ja>原料は有機・フェアトレードだけ。カカオ豆から板チョコまで自社でつくる</budoux-ja></li>
-          <li><budoux-ja>工場見学：カカオ豆から板チョコまでの作り方を順に見る</budoux-ja></li>
-          <li><budoux-ja>創業者の娘で、現在の代表 Julia Zotterさんとの対話：機会が得られた場合に行います（実施・時間は確約していません）</budoux-ja></li>
-        </ul>
+        <div class="wow"><p class="wow-h">ここがすごい！3つのポイント</p>
+<ol class="wow-l"><li><b><budoux-ja>工場が「チョコレートの劇場」。年間最大29万人が訪れる</budoux-ja></b><span><budoux-ja>工場を見るだけでなく、試食しながら歩く体験施設です。Zotterの発表では、多い年に約29万人が訪れます。</budoux-ja></span></li><li><b><budoux-ja>試食できる場所が、40か所以上</budoux-ja></b><span><budoux-ja>ロボットが運んでくる試食や、ヌガーの噴水など、遊びながら味わう仕掛けが並びます（公式サイトより）。</budoux-ja></span></li><li><b><budoux-ja>動物も畑も、そのまま料理になる「食べられる動物園」</budoux-ja></b><span><budoux-ja>2011年に開園した有機農場の体験施設です。敷地で育てた動物や作物を、そのまま料理にします。</budoux-ja></span></li></ol></div>
+        <p class="do-h">当日すること</p>
+        <ul class="dots"><li><budoux-ja>見る：カカオ豆から板チョコまでを、自社で行う工場</budoux-ja></li><li><budoux-ja>味わう：劇場の試食</budoux-ja></li><li><budoux-ja>話す：創業者の娘で現代表の Julia Zotterさんと話す時間を、つくれた場合に設けます（確約はできません）</budoux-ja></li></ul>
+        <p class="learn"><em>経営者が持ち帰るヒント</em><budoux-ja>商品を売る前に、工場そのものを「体験」にして、ファンをつくる。自社の工場や売り場で、お客さまにどんな体験を渡せるかを考えるヒントになります。</budoux-ja></p>
         <details class="more"><summary>くわしい説明と写真を見る</summary>
           <div class="more-body">
             <p class="mh">経営している人</p>
@@ -568,7 +581,7 @@ p,li,td{text-wrap:pretty}
             </ul>
             <p class="mh">歩み</p>
             <ul class="dots">
-              <li><budoux-ja>1992年：手ですくって詰める「ハンド・スクープド・チョコレート」を考案</budoux-ja></li>
+              <li><budoux-ja>1992年：型に流さず、手ですくって層を重ねる「ハンド・スクープド・チョコレート」を考案（同社の説明）</budoux-ja></li>
               <li><budoux-ja>1999年：チョコレート一本に絞り、実家の農場の元・家畜小屋に工房を開く</budoux-ja></li>
               <li><budoux-ja>2007年：カカオ豆から板チョコまでを自社で行う工場に拡張。有機・フェアトレードの品質だけでつくる、数少ない独立系メーカーに</budoux-ja></li>
             </ul>
@@ -577,16 +590,17 @@ p,li,td{text-wrap:pretty}
               <li><budoux-ja>全製品が有機。原料の有機素材は約400種類</budoux-ja></li>
               <li><budoux-ja>カカオは15か国の産地の協同組合と直接取引し、品質ボーナスを支払う（世界フェアトレード機関WFTOの会員）</budoux-ja></li>
               <li><budoux-ja>工場の電力・熱の60%を、太陽光・蒸気・地熱で自給</budoux-ja></li>
+              <li><budoux-ja>サステナビリティの賞を受賞：2024年 Primus Award（地域経済賞）、2020年 オーストリアSDG賞（企業部門）など</budoux-ja></li>
             </ul>
             <p class="mh">数字</p>
             <ul class="dots">
-              <li><budoux-ja>売上 約4,100万ユーロ（2025年）／従業員 約230人／チョコレート 500種類以上／年間生産量 約1,000トン</budoux-ja></li>
+              <li><budoux-ja>売上 約3,800万ユーロ（2024年）／従業員 約230人／チョコレート 約500種類／年間生産量 約1,000トン</budoux-ja></li>
             </ul>
             <p class="mh">見学できるもの</p>
             <ul class="dots">
               <li><budoux-ja>ガラス越しの製造現場とテイスティングツアー、カカオ映画館、有機の体験農場「食べられる動物園（Edible Zoo）」、チョコレートショップ、有機レストラン</budoux-ja></li>
             </ul>
-            <ul class="dots"><li class="note-s"><budoux-ja><small>出典：Zotterの公式サイト（2026年11月に確認）</small></budoux-ja></li></ul>
+            <ul class="dots"><li class="note-s"><budoux-ja><small>出典：Zotterの公式サイトとプレス資料（2026年11月に確認）</small></budoux-ja></li></ul>
             <div class="more-photos">
               <figure><img src="images/zotter_2.jpg" alt="Zotter" loading="lazy"><figcaption>Zotter</figcaption></figure>
               <figure><img src="images/zotter_4.jpg" alt="Zotter" loading="lazy"><figcaption>Zotter</figcaption></figure>
@@ -601,22 +615,22 @@ p,li,td{text-wrap:pretty}
     <article class="visit">
       <div class="v-head">
         <div class="st"><span class="b ok">確定</span></div>
-        <h4><budoux-ja>Manufaktur Gölles<span class="sb">（国内代表メーカー「酢・蒸留酒」）</span></budoux-ja></h4>
+        <h4><budoux-ja>Manufaktur Gölles<span class="sb">（酢・蒸留酒）</span></budoux-ja></h4>
         <p class="v-time"><budoux-ja>14:30〜（約2時間）</budoux-ja></p>
-        <p class="v-one"><budoux-ja>りんごの酢と蒸留酒のつくり手。<span class="nw">「りんごのバルサミコ酢」</span>で知られる</budoux-ja></p>
+        <p class="v-one"><budoux-ja>果樹農家から始まった、りんごの酢と蒸留酒のつくり手。<span class="nw">「りんごのバルサミコ酢」</span>で知られます。</budoux-ja></p>
       </div>
       <figure class="v-photo"><img src="images/goelles_2.jpg" alt="Manufaktur Gölles" loading="lazy"><figcaption>Manufaktur Gölles</figcaption></figure>
       <div class="v-body">
-        <ul class="dots">
-          <li><budoux-ja>1984年、創業者の Alois Göllesさんが、世界初のリンゴのバルサミコ酢をつくった</budoux-ja></li>
-          <li><budoux-ja>見学：オーストリア最大の酢樽貯蔵庫と蒸留所</budoux-ja></li>
-          <li><budoux-ja>酢の香りと味見／蒸留酒の試飲（団体向けのプログラム）</budoux-ja></li>
-        </ul>
+        <div class="wow"><p class="wow-h">ここがすごい！3つのポイント</p>
+<ol class="wow-l"><li><b><budoux-ja>100mlで90ユーロ（約1.6万円）。なぜ、この酢は高く売れるのか</budoux-ja></b><span><budoux-ja>最上級の「Apfelbalsam extra alt」は、ドイツの美食誌 Feinschmecker（2024年）がこの価格で紹介した酢です。オーク樽で、最低10年（20年以上のものも）熟成させます。</budoux-ja></span></li><li><b><budoux-ja>1984年、世界で初めてリンゴからバルサミコ酢をつくった</budoux-ja></b><span><budoux-ja>創業者の Alois Göllesさんが生み出したと、同社が「世界初」と説明しています。Feinschmecker誌は、この酢が料理人たちに衝撃を与えたと紹介しました。</budoux-ja></span></li><li><b><budoux-ja>蒸留酒が、美食誌 Falstaff で100点中99点</budoux-ja></b><span><budoux-ja>オーストリアの有力グルメ誌 Falstaff の評価で、ウィリアムス梨の蒸留酒が99点でした（2022年）。</budoux-ja></span></li></ol></div>
+        <p class="do-h">当日すること</p>
+        <ul class="dots"><li><budoux-ja>見る：約1,500本のオーク樽が並ぶ酢の貯蔵庫（オーストリア最大級と同社は説明）と、蒸留所</budoux-ja></li><li><budoux-ja>味わう：酢の香りと味見、蒸留酒の試飲（団体向けのプログラム）</budoux-ja></li><li><budoux-ja>話す：経営を引き継いだ David Göllesさんが、質問に答える予定です</budoux-ja></li></ul>
+        <p class="learn"><em>経営者が持ち帰るヒント</em><budoux-ja>安売りせずに選ばれる商品は、原料・製法・熟成の価値を、どう価格に変えているのか。そのヒントを現地で探ります。</budoux-ja></p>
         <details class="more"><summary>くわしい説明と写真を見る</summary>
           <div class="more-body">
             <p class="mh">経営している人</p>
             <ul class="dots">
-              <li><budoux-ja>創業者の Alois Göllesさん。果樹農家の家に生まれ、1984年に世界初のリンゴのバルサミコ酢をつくりました。その後約15年、世界で唯一のつくり手でした</budoux-ja></li>
+              <li><budoux-ja>創業者の Alois Göllesさん。果樹農家の家に生まれ、1984年に世界初のリンゴのバルサミコ酢をつくりました。同社の説明では、その後約15年、世界で唯一のつくり手でした</budoux-ja></li>
               <li><budoux-ja>息子の David Göllesさんが、2025年3月から Katharina Fleckさんとともに、製造所の経営を引き継いでいます。当日は David Göllesさんが質問に答える予定です</budoux-ja></li>
             </ul>
             <p class="mh">つくり方</p>
@@ -633,9 +647,9 @@ p,li,td{text-wrap:pretty}
             </ul>
             <p class="mh">見学できるもの</p>
             <ul class="dots">
-              <li><budoux-ja>果樹園シアター → オーストリア最大の酢樽貯蔵庫 → 感覚のトンネル → 蒸留所。試飲つき</budoux-ja></li>
+              <li><budoux-ja>果樹園シアター → オーストリア最大級（約1,500樽）の酢樽貯蔵庫 → 感覚のトンネル → 蒸留所。試飲つき</budoux-ja></li>
             </ul>
-            <ul class="dots"><li class="note-s"><budoux-ja><small>出典：Manufaktur Göllesの公式サイト（2026年11月に確認）</small></budoux-ja></li></ul>
+            <ul class="dots"><li class="note-s"><budoux-ja><small>出典：Manufaktur Göllesの公式サイト、Falstaff、Feinschmecker誌（2026年11月に確認）</small></budoux-ja></li></ul>
             <div class="more-photos">
               <figure><img src="images/goelles_3.jpg" alt="Manufaktur Gölles" loading="lazy"><figcaption>Manufaktur Gölles</figcaption></figure>
               <figure><img src="images/goelles_5.jpg" alt="Manufaktur Gölles" loading="lazy"><figcaption>Manufaktur Gölles</figcaption></figure>
@@ -648,11 +662,14 @@ p,li,td{text-wrap:pretty}
     </article>
 
     <article class="visit" style="margin-bottom:0">
+      <div class="v-head">
+        <h4><budoux-ja>Riegersburg城</budoux-ja></h4>
+        <p class="v-one"><budoux-ja>2つの訪問先のすぐそばに立つ、丘の上の城です。時間があれば、立ち寄ります。</budoux-ja></p>
+      </div>
       <figure class="v-photo"><img src="images/riegersburg_3.jpg" alt="Riegersburg" loading="lazy"><figcaption>Riegersburg</figcaption></figure>
       <div class="v-body">
-        <ul class="dots">
-          <li><budoux-ja>時間があれば、街を観光します</budoux-ja></li>
-        </ul>
+        <div class="wow"><p class="wow-h">ここがすごい！2つのポイント</p>
+<ol class="wow-l"><li><b><budoux-ja>標高482mの火山岩の上に立つ城</budoux-ja></b><span><budoux-ja>7つの門、11の稜堡、約4kmの城壁を備えます。17世紀には「キリスト教世界で最も強い要塞」と呼ばれ、難攻不落と伝えられています。</budoux-ja></span></li><li><b><budoux-ja>魔女博物館と、猛禽類のショー</budoux-ja></b><span><budoux-ja>1987年の州の展覧会「魔女と魔術師」（約36万人が来場）を起源に持つ、魔女博物館があります。猛禽類のショーも見られます。</budoux-ja></span></li></ol></div>
         <details class="more"><summary>写真をもっと見る</summary>
           <div class="more-photos">
             <figure><img src="images/riegersburg_4.jpg" alt="Riegersburg" loading="lazy"><figcaption>Riegersburg</figcaption></figure>
@@ -666,7 +683,7 @@ p,li,td{text-wrap:pretty}
     <figure class="stay-photo"><img src="images/retter_5.jpg" alt="RETTER" loading="lazy"><figcaption>RETTER</figcaption></figure>
     <div class="in stay-in">
       <div class="stay-name"><span class="b und">未定</span><h4><budoux-ja>RETTER<span class="nw">（前の日と同じ宿）</span></budoux-ja></h4></div>
-      <p class="stay-status"><budoux-ja>こちらの宿泊先は団体予約に厳しい条件があり、今後宿泊先に変更が生じる可能性があります。4月にお申し込み済みの皆さまへ結果をご報告します</budoux-ja></p>
+      <p class="stay-status"><budoux-ja>RETTERは団体予約の条件が厳しく、宿泊先が変わる可能性があります。変わる場合は、4月に、お申し込み済みの皆さまへ結果をご報告します。</budoux-ja></p>
     </div>
   </div>
 </section>
@@ -676,22 +693,22 @@ p,li,td{text-wrap:pretty}
   <div class="dhero"><img src="images/duernstein.jpg" alt="Dürnstein（ヴァッハウ地方）" loading="lazy">
     <div class="in"><p class="dl"><span class="dn">3日目</span><span class="dd">7/27（火）</span></p><h3><budoux-ja>ドナウ川沿いの<span class="nw">ワインの里で、</span>ビオディナミのワインを</budoux-ja></h3></div></div>
   <div class="dbody"><div class="in">
-    <p class="lead-strip"><budoux-ja>午前は、シュタイアーマルク州から <b>Wachau（ヴァッハウ）地方</b>へバスで移動</budoux-ja></p>
+    <p class="lead-strip"><budoux-ja>午前は、シュタイアーマルク州から <b>Wachau（ヴァッハウ）地方</b>へバスで移動します。ヴァッハウは、ドナウ川沿いに続く、ユネスコ世界遺産（2000年登録）の谷です</budoux-ja></p>
 
     <article class="visit">
       <div class="v-head">
         <div class="st"><span class="b ok">確定</span></div>
-        <h4><budoux-ja>Nikolaihof<span class="sb">（国内最古のワイナリー）</span></budoux-ja></h4>
+        <h4><budoux-ja>Nikolaihof<span class="sb">（ワイン）</span></budoux-ja></h4>
         <p class="v-time"><budoux-ja>15:00〜</budoux-ja></p>
-        <p class="v-one"><budoux-ja>ローマ時代から続く、オーストリア最古のワイン農園として知られる老舗。1971年から、ビオディナミ（自然の力を生かす農法）でワインをつくる</budoux-ja></p>
+        <p class="v-one"><budoux-ja>ローマ時代にさかのぼる敷地で、ワインをつくり続ける家族のワイナリー。1971年から、ビオディナミ（自然の力を生かす農法）で栽培しています。</budoux-ja></p>
       </div>
       <figure class="v-photo"><img src="images/nikolaihof_3.jpg" alt="Nikolaihof" loading="lazy"><figcaption>Nikolaihof</figcaption></figure>
       <div class="v-body">
-        <ul class="dots">
-          <li><budoux-ja>ワイナリーの見学</budoux-ja></li>
-          <li><budoux-ja>ビオディナミ栽培の<span class="nw">ワイン3種類の試飲</span></budoux-ja></li>
-          <li><budoux-ja>ご家族との対話：機会が得られた場合に行います（実施・時間は確約していません）</budoux-ja></li>
-        </ul>
+        <div class="wow"><p class="wow-h">ここがすごい！3つのポイント</p>
+<ol class="wow-l"><li><b><budoux-ja>オーストリア最古のワイナリー。敷地は、ローマ時代にさかのぼる</budoux-ja></b><span><budoux-ja>「オーストリア最古」は、ワイナリー自身の言葉で、ニーダーエステルライヒ州の公式発表も同じ表現です。ワインセラーは、ローマ時代の地下聖堂の上に造られています。</budoux-ja></span></li><li><b><budoux-ja>オーストリアのワインで初めて、100点満点</budoux-ja></b><span><budoux-ja>世界的なワイン評価誌 Wine Advocate が、2014年にリースリング「Vinothek 1995」へ100点を付けました。オーストリアのワインで初の満点と伝えられています。</budoux-ja></span></li><li><b><budoux-ja>50年以上続くビオディナミ。有機ワインの審査でも評価</budoux-ja></b><span><budoux-ja>世界でも最も早くから続くビオディナミ農園のひとつです。2007年、スイス・バーゼルの有機農業の世界会議（IFOAM）のワイン審査で、110銘柄のうち、辛口白ワインの優勝3銘柄に選ばれました。</budoux-ja></span></li></ol></div>
+        <p class="do-h">当日すること</p>
+        <ul class="dots"><li><budoux-ja>見る：ローマ時代にさかのぼる敷地とワインセラー、ヴァッハウの景観</budoux-ja></li><li><budoux-ja>味わう：ビオディナミ栽培のワイン3種類の試飲</budoux-ja></li><li><budoux-ja>話す：ご家族と話す時間を、つくれた場合に設けます（確約はできません）</budoux-ja></li></ul>
+        <p class="learn"><em>経営者が持ち帰るヒント</em><budoux-ja>古い歴史と、手間のかかる農法を、ワインの価値としてどう伝えているのか。高い評価と価格につながる、商品づくりのヒントを探ります。</budoux-ja></p>
         <details class="more"><summary>くわしい説明と写真を見る</summary>
           <div class="more-body">
             <p class="mh">経営している人</p>
@@ -717,7 +734,7 @@ p,li,td{text-wrap:pretty}
             <ul class="dots">
               <li><budoux-ja>ローマ時代の地下納骨堂の上に造られた歴史的なワインセラー、ゴシック様式の穹窿が残る旧礼拝堂、ユネスコ世界遺産のヴァッハウの景観</budoux-ja></li>
             </ul>
-            <ul class="dots"><li class="note-s"><budoux-ja><small>出典：Nikolaihofの公式サイト（2026年11月に確認）</small></budoux-ja></li></ul>
+            <ul class="dots"><li class="note-s"><budoux-ja><small>出典：Nikolaihofの公式サイト、ニーダーエステルライヒ州の公式発表（2007年）、Wine Advocate（2026年11月に確認）</small></budoux-ja></li></ul>
             <div class="more-photos">
             <figure><img src="images/nikolaihof_4.jpg" alt="Nikolaihof" loading="lazy"><figcaption>Nikolaihof</figcaption></figure>
             <figure><img src="images/nikolaihof_7.jpg" alt="Nikolaihof" loading="lazy"><figcaption>Nikolaihof</figcaption></figure>
@@ -733,18 +750,17 @@ p,li,td{text-wrap:pretty}
       <div class="prod"><img src="images/prod_nikolaihof.jpg" alt="Nikolaihof" loading="lazy"><div class="prod-lbl"><span class="pc">代表的な商品のひとつ</span><span class="pj"><budoux-ja>日本：輸入されている</budoux-ja></span></div></div>
     </article>
 
-    <div class="slot"><span class="b wait">調整中</span><p><budoux-ja>この日は、ほかの訪問先も調整しています</budoux-ja></p></div>
+    <div class="slot"><span class="b wait">調整中</span><p><budoux-ja>この日は、ほかの訪問先が加わる予定です。</budoux-ja></p></div>
   </div></div>
   <div class="dstay">
     <p class="stay-tag">この日の宿</p>
     <figure class="stay-photo"><img src="images/loisium_2.jpg" alt="LOISIUM" loading="lazy"><figcaption>LOISIUM</figcaption></figure>
     <div class="in stay-in">
       <div class="stay-name"><span class="b hold">仮押さえ</span><h4><budoux-ja>LOISIUM Langenlois（ヴァッハウ方面）</budoux-ja></h4></div>
+      <p class="wow-h">ここがすごい！3つのポイント</p>
+<ol class="wow-l"><li><b><budoux-ja>ミシュランガイドに載る、ワインのホテル</budoux-ja></b><span><budoux-ja>世界的なガイド『ミシュランガイド』に、宿として掲載されています（星やキーの評価ではなく、宿としての掲載です）。ワインの産地カンプタールにあります。</budoux-ja></span></li><li><b><budoux-ja>約900年前のワインセラーの上に建つ、現代建築</budoux-ja></b><span><budoux-ja>ニューヨークの建築家スティーブン・ホールの設計で、2005年に完成しました。</budoux-ja></span></li><li><b><budoux-ja>食事もワインも、地元から</budoux-ja></b><span><budoux-ja>地元の小さな生産者から届く、ニーダーエスターライヒ州の食材を、現代的な料理に仕立てるレストランです。合わせるワインは、9割以上が地元カンプタールのものです。</budoux-ja></span></li></ol>
       <ul class="dots">
-        <li><budoux-ja>ワインの産地カンプタールにある、ワインがテーマのホテル</budoux-ja></li>
-        <li><budoux-ja>食事は、地元の小さな生産者から届く、ニーダーエスターライヒ州の食材を、現代的な料理に仕立てるレストランで</budoux-ja></li>
-        <li><budoux-ja>合わせるワインは、9割以上が地元カンプタールのもの</budoux-ja></li>
-        <li class="note-s"><budoux-ja><small>宿の公式サイトとミシュランガイドの紹介による</small></budoux-ja></li>
+        <li class="note-s"><budoux-ja><small>宿の公式サイトとミシュランガイドの紹介による。宿には、アヴェダの約1,000m²のスパもあります</small></budoux-ja></li>
       </ul>
       <details class="more"><summary>写真をもっと見る</summary>
         <div class="more-photos">
@@ -765,16 +781,16 @@ p,li,td{text-wrap:pretty}
     <article class="visit">
       <div class="v-head">
         <div class="st"><span class="b wait">調整中</span></div>
-        <h4><budoux-ja>SONNENTOR<span class="sb">（国内代表メーカー「ハーブ・お茶」）</span></budoux-ja></h4>
-        <p class="v-one"><budoux-ja>有機のハーブ・お茶・スパイスのメーカー。海外の市場にも広げてきた会社</budoux-ja></p>
+        <h4><budoux-ja>SONNENTOR<span class="sb">（ハーブ・お茶）</span></budoux-ja></h4>
+        <p class="v-one"><budoux-ja>有機のハーブ・お茶・スパイスのメーカー。小さな村の本社から、世界へ売ってきた会社です。</budoux-ja></p>
       </div>
       <figure class="v-photo"><img src="images/sonnentor_4.jpg" alt="SONNENTOR" loading="lazy"><figcaption>SONNENTOR</figcaption></figure>
       <div class="v-body">
-        <ul class="dots">
-          <li><budoux-ja>見学：本社・工場・ショップ（3時間以上・通訳つき）</budoux-ja></li>
-          <li><budoux-ja>昼食：敷地内のレストランを予定</budoux-ja></li>
-          <li><budoux-ja>経営に携わる方との対話：機会が得られた場合に行います（実施・時間は確約していません）</budoux-ja></li>
-        </ul>
+        <div class="wow"><p class="wow-h">ここがすごい！3つのポイント</p>
+<ol class="wow-l"><li><b><budoux-ja>人口約100人の村から、世界50か国超へ。どうやって売ったのか</budoux-ja></b><span><budoux-ja>小さな農家の末っ子として生まれた創業者が、1988年に始めました。いまは約900製品を、日本を含む50か国超へ輸出し、売上は約6,200万ユーロ（2024/25年）です。</budoux-ja></span></li><li><b><budoux-ja>約1,000軒の有機農家と、直接取引</budoux-ja></b><span><budoux-ja>世界の約1,000軒の有機農家と直接つながり、その暮らしを支えています（会社資料より）。</budoux-ja></span></li><li><b><budoux-ja>村に、年間最大4万人が訪れる</budoux-ja></b><span><budoux-ja>同社の発表では、多い年に約4万人が、見学や食事に訪れます。ドイツ・サステナビリティ賞（2024年）や、オーストリアのCSR賞TRIGOS（2015年）も受けています。</budoux-ja></span></li></ol></div>
+        <p class="do-h">当日すること</p>
+        <ul class="dots"><li><budoux-ja>見る：本社・工場・ショップ（3時間以上・通訳つき）</budoux-ja></li><li><budoux-ja>味わう：敷地内のレストランで昼食（予定）</budoux-ja></li><li><budoux-ja>話す：経営に携わる方と話す時間を、つくれた場合に設けます（確約はできません）</budoux-ja></li></ul>
+        <p class="learn"><em>経営者が持ち帰るヒント</em><budoux-ja>小さな会社が、どうやって世界で選ばれる「ブランド」になったのか。生産者・工場・売り場・来訪者をつなぐ仕組みを、現地で確かめます。</budoux-ja></p>
         <details class="more"><summary>くわしい説明と写真を見る</summary>
           <div class="more-body">
             <p class="mh">経営している人</p>
@@ -786,7 +802,7 @@ p,li,td{text-wrap:pretty}
             <ul class="dots">
               <li><budoux-ja>1992年：約100人の村 Sprögnitz の古い農家を購入。1994年に最初の農家ショップを開く</budoux-ja></li>
               <li><budoux-ja>1997年：アジアへ初の正式な輸出</budoux-ja></li>
-              <li><budoux-ja>社名の「太陽の門」は、この地方で、農奴から解放された農家が、自分たちの門に太陽の印を飾ったことに由来します</budoux-ja></li>
+              <li><budoux-ja>創業者は、小さな農家の5人きょうだいの末っ子として生まれました。赤いメガネがトレードマークです</budoux-ja></li>
             </ul>
             <p class="mh">こだわり・数字</p>
             <ul class="dots">
@@ -802,7 +818,7 @@ p,li,td{text-wrap:pretty}
             <ul class="dots">
               <li><budoux-ja>ハーブ・スパイスのホールとパッキングの現場、自然庭園、有機食堂、ショップ</budoux-ja></li>
             </ul>
-            <ul class="dots"><li class="note-s"><budoux-ja><small>出典：SONNENTORの公式サイト（2026年11月に確認）</small></budoux-ja></li></ul>
+            <ul class="dots"><li class="note-s"><budoux-ja><small>出典：SONNENTORの公式サイトと会社資料（2026年11月に確認）</small></budoux-ja></li></ul>
             <div class="more-photos">
               <figure><img src="images/sonnentor.jpg" alt="SONNENTOR" loading="lazy"><figcaption>SONNENTOR</figcaption></figure>
               <figure><img src="images/sonnentor_3.jpg" alt="SONNENTOR" loading="lazy"><figcaption>SONNENTOR</figcaption></figure>
@@ -815,7 +831,7 @@ p,li,td{text-wrap:pretty}
       <div class="prod"><img src="images/prod_sonnentor.jpg" alt="SONNENTOR" loading="lazy"><div class="prod-lbl"><span class="pc">代表的な商品のひとつ</span><span class="pj"><budoux-ja>日本：輸出している</budoux-ja></span></div></div>
     </article>
 
-    <div class="slot"><span class="b wait">調整中</span><p><budoux-ja>この日は、ほかの訪問先も調整しています</budoux-ja></p></div>
+    <div class="slot"><span class="b wait">調整中</span><p><budoux-ja>この日は、ほかの訪問先が加わる予定です。</budoux-ja></p></div>
   </div></div>
   <div class="dstay">
     <p class="stay-tag">この日の宿</p>
@@ -829,21 +845,22 @@ p,li,td{text-wrap:pretty}
 <!-- 5日目 -->
 <section class="day d-odd" id="day5" style="--dc:#8f5278">
   <div class="dhero"><img src="images/pannatura_2.jpg" alt="PANNATURA" loading="lazy">
-    <div class="in"><p class="dl"><span class="dn">5日目</span><span class="dd">7/29（木）</span></p><h3><budoux-ja>有機スナックの会社と、有機の大きな農場を訪ねる</budoux-ja></h3></div></div>
+    <div class="in"><p class="dl"><span class="dn">5日目</span><span class="dd">7/29（木）</span></p><h3><budoux-ja>大豆スナックの工場と、ハイドンゆかりの有機農場へ</budoux-ja></h3></div></div>
   <div class="dbody"><div class="in">
     <article class="visit">
       <div class="v-head">
         <div class="st"><span class="b hold">仮押さえ</span></div>
-        <h4><budoux-ja>Landgarten<span class="sb">（国内代表メーカー「菓子類」）</span></budoux-ja></h4>
+        <h4><budoux-ja>Landgarten<span class="sb">（スナック）</span></budoux-ja></h4>
         <p class="v-time"><budoux-ja>10:00〜（約2時間）</budoux-ja></p>
-        <p class="v-one"><budoux-ja>有機のスナックのメーカー</budoux-ja></p>
+        <p class="v-one"><budoux-ja>有機の大豆・かぼちゃの種・ナッツで、スナックをつくるメーカー。農家の仲間が始めた会社です。</budoux-ja></p>
       </div>
       <figure class="v-photo"><img src="images/landgarten_3.jpg" alt="Landgarten" loading="lazy"><figcaption>Landgarten</figcaption></figure>
       <div class="v-body">
-        <ul class="dots">
-          <li><budoux-ja>2か所の製造拠点の見学</budoux-ja></li>
-          <li><budoux-ja>経営に携わる方との対話：機会が得られた場合に行います（実施・時間は確約していません）</budoux-ja></li>
-        </ul>
+        <div class="wow"><p class="wow-h">ここがすごい！3つのポイント</p>
+<ol class="wow-l"><li><b><budoux-ja>油を使わず、熱風で焙煎する大豆スナック</budoux-ja></b><span><budoux-ja>同社は、この方式を「世界で唯一の特許取得の方式」と説明しています。1990年に、大豆用の熱風焙煎機を自分たちで完成させました。</budoux-ja></span></li><li><b><budoux-ja>6人の若い農家から、36か国へ</budoux-ja></b><span><budoux-ja>1986年に、6人の若い農家が大豆を育て始め、1989年に会社になりました。いまは従業員111人で、36か国で販売しています。</budoux-ja></span></li><li><b><budoux-ja>大豆は、オーストリアの畑から。日本風味のスナックもある</budoux-ja></b><span><budoux-ja>大豆は、自社農地約30ヘクタールと、契約農家約150ヘクタールで育てます。たまり醤油味のスナックも、商品にあります。</budoux-ja></span></li></ol></div>
+        <p class="do-h">当日すること</p>
+        <ul class="dots"><li><budoux-ja>見る：2か所の製造拠点で、大豆・種・果実が、加工・焙煎・コーティングされる様子</budoux-ja></li><li><budoux-ja>聞く：専門家の案内で、約2時間</budoux-ja></li><li><budoux-ja>話す：経営に携わる方と話す時間を、つくれた場合に設けます（確約はできません）</budoux-ja></li></ul>
+        <p class="learn"><em>経営者が持ち帰るヒント</em><budoux-ja>農家の仲間6人が、自分たちの畑の大豆から、36か国で売る商品をどう育てたのか。原料づくりから売り場までをつなぐ強みを探ります。</budoux-ja></p>
         <details class="more"><summary>くわしい説明と写真を見る</summary>
           <div class="more-body">
             <p class="mh">経営している人</p>
@@ -863,13 +880,14 @@ p,li,td{text-wrap:pretty}
             </ul>
             <p class="mh">数字</p>
             <ul class="dots">
-              <li><budoux-ja>36か国で販売／年間のダイズ処理量は最大350トン／製品は40種類超</budoux-ja></li>
+              <li><budoux-ja>36か国で販売／年間のダイズ処理量は最大350トン／製品は40種類超／従業員111人</budoux-ja></li>
+              <li><budoux-ja>同社は、2010年のアカデミー賞（オスカー）の贈呈品に採用されたと話しています</budoux-ja></li>
             </ul>
             <p class="mh">見学できるもの</p>
             <ul class="dots">
               <li><budoux-ja>2か所の製造拠点で、ダイズ・種・果実が、加工・焙煎・コーティングされる様子を、専門家の案内で約2時間</budoux-ja></li>
             </ul>
-            <ul class="dots"><li class="note-s"><budoux-ja><small>出典：Landgartenの公式サイト（2026年11月に確認）</small></budoux-ja></li></ul>
+            <ul class="dots"><li class="note-s"><budoux-ja><small>出典：Landgartenの公式サイトとインタビュー記事（2026年11月に確認）。「世界で唯一」「オスカー」は同社の説明です</small></budoux-ja></li></ul>
             <div class="more-photos">
               <figure><img src="images/landgarten_2.jpg" alt="Landgarten" loading="lazy"><figcaption>Landgarten</figcaption></figure>
               <figure><img src="images/landgarten_4.jpg" alt="Landgarten" loading="lazy"><figcaption>Landgarten</figcaption></figure>
@@ -890,17 +908,17 @@ p,li,td{text-wrap:pretty}
     <article class="visit">
       <div class="v-head">
         <div class="st"><span class="b wait">調整中</span></div>
-        <h4><budoux-ja>PANNATURA<span class="sb">（国内最大の有機農業法人）</span></budoux-ja></h4>
+        <h4><budoux-ja>PANNATURA<span class="sb">（有機農場）</span></budoux-ja></h4>
         <p class="v-time"><budoux-ja>午後（3時間半〜4時間）</budoux-ja></p>
-        <p class="v-one"><budoux-ja>Bio-Landgut Esterházy。2002年から、自社で耕す畑をすべて有機で営んでいる農場。2,100ヘクタール（東京ドーム約450個分）を有機で営む、国内最大の有機農業法人</budoux-ja></p>
+        <p class="v-one"><budoux-ja>Bio-Landgut Esterházy。作曲家ハイドンを雇った名家エステルハージ家の領地を受け継ぐ、オーストリア最大級の有機農場です。</budoux-ja></p>
       </div>
       <figure class="v-photo"><img src="images/pannatura_4.jpg" alt="PANNATURA" loading="lazy"><figcaption>PANNATURA</figcaption></figure>
       <div class="v-body">
-        <ul class="dots">
-          <li><budoux-ja>農場での昼食</budoux-ja></li>
-          <li><budoux-ja>農場の見学</budoux-ja></li>
-          <li><budoux-ja>経営の責任者との対話：機会が得られた場合に行います（実施・時間は確約していません）</budoux-ja></li>
-        </ul>
+        <div class="wow"><p class="wow-h">ここがすごい！3つのポイント</p>
+<ol class="wow-l"><li><b><budoux-ja>作曲家ハイドンを、約30年雇った名家の領地</budoux-ja></b><span><budoux-ja>エステルハージ家は、1761年から約30年、ハイドンを宮廷に雇った貴族です。その領地を財団が受け継ぎ、いまも農林業と文化施設を営んでいます。</budoux-ja></span></li><li><b><budoux-ja>有機の畑は約2,100〜2,200ヘクタール。東京ドーム約450個分</budoux-ja></b><span><budoux-ja>自社で耕す畑は、2002年からすべて有機です。面積は2017〜2020年の報道によるもので、オーストリア最大級の有機農場のひとつです。</budoux-ja></span></li><li><b><budoux-ja>大手スーパーの有機ブランドに、小麦を届ける</budoux-ja></b><span><budoux-ja>BILLAなどで売られる有機ブランド Ja! Natürlich の、有機全粒粉の産地として表示されています。</budoux-ja></span></li></ol></div>
+        <p class="do-h">当日すること</p>
+        <ul class="dots"><li><budoux-ja>見る：有機の畑・Angus牛・ニワトリ・養分の循環のある農場</budoux-ja></li><li><budoux-ja>味わう：農場での昼食</budoux-ja></li><li><budoux-ja>話す：経営の責任者と話す時間を、つくれた場合に設けます（確約はできません）</budoux-ja></li></ul>
+        <p class="learn"><em>経営者が持ち帰るヒント</em><budoux-ja>約400年続く家が、土地を有機で守りながら、原料・肉・文化施設までを事業にしている。原料を「つくる側」から、食品づくりの未来を考えます。</budoux-ja></p>
         <details class="more"><summary>くわしい説明と写真を見る</summary>
           <div class="more-body">
             <p class="mh">どんな組織か</p>
@@ -917,7 +935,8 @@ p,li,td{text-wrap:pretty}
             <p class="mh">つくっているもの</p>
             <ul class="dots">
               <li><budoux-ja>穀物、油料作物（油用カボチャ・ヒマワリ）、豆類。製品は、パンや小麦粉の原料、カボチャ種子油、ヒマワリ油、ハチミツ、Angus牛肉、野生肉</budoux-ja></li>
-              <li><budoux-ja>土地全体は約44,000ヘクタール（森林・農地・水域など）。有機の畑は約2,100ヘクタール＝東京ドーム約450個分（2017年の報道）</budoux-ja></li>
+              <li><budoux-ja>土地全体は約44,000ヘクタール（森林・農地・水域など）。有機の畑は約2,100ヘクタール＝東京ドーム約450個分（2017年の報道）。2019〜2020年の報道では約2,200ヘクタール</budoux-ja></li>
+              <li><budoux-ja>城・オペラ会場などの文化施設に、年間約60万人が訪れます（2024年・財団の発表）</budoux-ja></li>
             </ul>
             <p class="mh">見学できるもの</p>
             <ul class="dots">
@@ -942,10 +961,8 @@ p,li,td{text-wrap:pretty}
     <figure class="stay-photo"><img src="images/mooons_rooftop.jpg" alt="MOOONS Vienna" loading="lazy"><figcaption>MOOONS Vienna</figcaption></figure>
     <div class="in stay-in">
       <div class="stay-name"><span class="b ok">確定</span><h4><budoux-ja>MOOONS Vienna<span class="nw">（ウィーン中央駅の向かい）</span></budoux-ja></h4></div>
-      <ul class="dots">
-        <li><budoux-ja>2019年開業のデザインホテル。テーマは月と宇宙。屋上に庭とバー</budoux-ja></li>
-        <li><budoux-ja>宿泊先は、変更となる場合があります</budoux-ja></li>
-      </ul>
+      <p class="wow-h">ここがすごい！3つのポイント</p>
+<ol class="wow-l"><li><b><budoux-ja>ウィーン中央駅の、目の前</budoux-ja></b><span><budoux-ja>丸窓と、金色の月が目印の建物です。</budoux-ja></span></li><li><b><budoux-ja>月と宇宙をテーマにした、全170室のデザインホテル</budoux-ja></b><span><budoux-ja>設計は、ウィーンの建築事務所 Moser Architects です。</budoux-ja></span></li><li><b><budoux-ja>美食誌 Falstaff のホテルガイドに掲載</budoux-ja></b><span><budoux-ja>オーストリアの有力グルメ誌 Falstaff の「ホテルガイド2026」に、「ニュー・ホットスポット」として紹介されています。</budoux-ja></span></li></ol>
       <details class="more"><summary>写真をもっと見る</summary>
         <div class="more-photos">
           <figure><img src="images/mooons_2.jpg" alt="MOOONS Vienna" loading="lazy"><figcaption>MOOONS Vienna</figcaption></figure>
@@ -974,21 +991,21 @@ p,li,td{text-wrap:pretty}
         <div class="st"><span class="b wait">調整中</span></div>
         <h4><budoux-ja>ウィーン市の公共調達に関わる担当者</budoux-ja></h4>
         <p class="v-time"><budoux-ja>午前（約90分・同時通訳）</budoux-ja></p>
-        <p class="v-one"><budoux-ja>1日10万食以上を提供するウィーン市。公共施設で有機食品を増やしてきた背景や、食品を選ぶ基準の考え方を、担当者に聞く予定です</budoux-ja></p>
+        <p class="v-one"><budoux-ja>毎日約12万食を、公共施設に届けるウィーン市。有機食品を増やしてきた背景と、食品を選ぶ基準の考え方を、担当者に聞く予定です。</budoux-ja></p>
       </div>
       <figure class="v-photo"><img src="images/wien_2.jpg" alt="Wien（ウィーン）" loading="lazy"><figcaption>Wien（ウィーン）</figcaption></figure>
       <div class="v-body">
-        <ul class="dots">
-          <li><budoux-ja>ウィーン市は1998年から、公共の食事の調達基準を運用</budoux-ja></li>
-          <li><budoux-ja>対象は、幼稚園・学校・病院・高齢者施設。1日10万食以上</budoux-ja></li>
-          <li><budoux-ja>有機の割合：幼稚園60%・学校50%</budoux-ja></li>
-        </ul>
+        <div class="wow"><p class="wow-h">ここがすごい！3つのポイント</p>
+<ol class="wow-l"><li><b><budoux-ja>毎日約12万食。公共の給食が、巨大な市場になっている</budoux-ja></b><span><budoux-ja>幼稚園・学校・病院・高齢者施設で出る食事を、ウィーン市が調達の基準をつくって選んでいます（市の公式サイトより）。</budoux-ja></span></li><li><b><budoux-ja>幼稚園は60%、学校は50%が有機</budoux-ja></b><span><budoux-ja>病院は約3分の1、高齢者施設は約35%が有機です。</budoux-ja></span></li><li><b><budoux-ja>25年以上前から続く、調達の仕組み</budoux-ja></b><span><budoux-ja>1998年に調達の仕組み「ÖkoKauf Wien」を始め、2011年に国際的な賞を2つ受けました（市の発表）。市自身も、約2,000ヘクタールの有機農場を営んでいます。</budoux-ja></span></li></ol></div>
+        <p class="do-h">当日すること</p>
+        <ul class="dots"><li><budoux-ja>聞く：有機食品の基準を、どのように決めてきたのか</budoux-ja></li><li><budoux-ja>聞く：公共施設の調達に、基準がどう反映されているのか</budoux-ja></li><li><budoux-ja>考える：公共の給食は、メーカーにも小売にも関われる分野です</budoux-ja></li></ul>
+        <p class="learn"><em>経営者が持ち帰るヒント</em><budoux-ja>公共の買い手が決めた基準は、民間の食品づくりにどう広がるのか。自社の商品が、大きな買い手に選ばれる条件を考えます。</budoux-ja></p>
         <details class="more"><summary>くわしく見る</summary>
           <div class="more-body">
             <ul class="dots">
               <li><budoux-ja>市の有機水準は、全体で最低30%（1998年〜）→ 2026年40%以上 → 2030年55%以上へ引き上げる計画</budoux-ja></li>
               <li class="note-s"><budoux-ja><small>出典：ウィーン市の食品調達ページ・食品の基準（2024年2月版）。割合は施設ごとの数量ベース、基準の30%は金額ベース</small></budoux-ja></li>
-              <li><budoux-ja>聞くこと：有機食品の基準をどのように決め、公共施設での調達にどう反映してきたのか。その背景と、今後の方向性</budoux-ja></li>
+              
             </ul>
           </div>
         </details>
@@ -998,22 +1015,15 @@ p,li,td{text-wrap:pretty}
     <article class="visit">
       <div class="v-head">
         <div class="st"><span class="b wait">調整中</span></div>
-        <h4><budoux-ja>BIO AUSTRIA<span class="sb">（オーストリアの有機農家を代表する全国団体）</span></budoux-ja></h4>
+        <h4><budoux-ja>BIO AUSTRIA<span class="sb">（有機農家の全国団体）</span></budoux-ja></h4>
+        <p class="v-one"><budoux-ja>オーストリアの有機農家を代表する団体です。有機の基準と、認証ロゴをつくっています。</budoux-ja></p>
       </div>
       <div class="v-body" style="padding-top:4px">
-        <ul class="dots">
-          <li><budoux-ja>約13,000の有機農家が加盟（公式サイトより）</budoux-ja></li>
-          <li><budoux-ja>EUの有機規則より厳しい独自の品質基準をつくり、それに対応するロゴ（認証マーク）を運営</budoux-ja></li>
-          <li><budoux-ja>農家への助言・研修、政策への働きかけも行う</budoux-ja></li>
-        </ul>
-        <details class="more"><summary>くわしく見る</summary>
-          <div class="more-body">
-            <ul class="dots">
-              <li><budoux-ja>独自の基準は、農場全体を有機で管理することや、家畜の飼育環境などにも及びます（BIO AUSTRIA公式サイトより）</budoux-ja></li>
-              <li><budoux-ja>聞くこと：オーストリアの有機の仕組み、独自の品質基準の考え方、公共の給食への有機食品の広がり</budoux-ja></li>
-            </ul>
-          </div>
-        </details>
+        <div class="wow"><p class="wow-h">ここがすごい！3つのポイント</p>
+<ol class="wow-l"><li><b><budoux-ja>約12,000軒が加盟。有機農家の約半数</budoux-ja></b><span><budoux-ja>オーストリアの有機農家は約2万4千軒（2024年）。その約半数が、この団体に加盟しています（公式サイトと国内統計より）。</budoux-ja></span></li><li><b><budoux-ja>国全体で、農地の27%が有機。EU平均の2倍以上</budoux-ja></b><span><budoux-ja>EUの統計（2022年）で、オーストリアは、農地に占める有機の割合がEU最高の27%でした。EU平均は約10.5%です。</budoux-ja></span></li><li><b><budoux-ja>EUの有機規則より厳しい、独自の基準とロゴ</budoux-ja></b><span><budoux-ja>農場全体を有機で管理することや、家畜の飼育環境にまで基準が及びます。団体の起源は1959年にさかのぼります。</budoux-ja></span></li></ol></div>
+        <p class="do-h">当日すること</p>
+        <ul class="dots"><li><budoux-ja>聞く：オーストリアの有機の仕組み</budoux-ja></li><li><budoux-ja>聞く：独自の品質基準の考え方</budoux-ja></li><li><budoux-ja>聞く：公共の給食へ、有機食品が広がった経緯</budoux-ja></li></ul>
+        <p class="learn"><em>経営者が持ち帰るヒント</em><budoux-ja>認証マークは、商品の価値を伝える「共通の言葉」になります。自社の商品の価値を、買い手にどんな言葉やマークで伝えているかを見直します。</budoux-ja></p>
       </div>
     </article>
 
@@ -1022,13 +1032,15 @@ p,li,td{text-wrap:pretty}
         <div class="st"><span class="b und">未定</span></div>
         <h4><budoux-ja>ウィーンのスーパー<span class="sb">（一般＋オーガニック）</span></budoux-ja></h4>
         <p class="v-time"><budoux-ja>午後</budoux-ja></p>
+        <p class="v-one"><budoux-ja>市民が毎日使う売り場で、有機の商品がどう並び、どう選ばれているかを見ます。</budoux-ja></p>
       </div>
       <figure class="v-photo"><img src="images/super_denns.jpg" alt="ウィーンのオーガニックのスーパー" loading="lazy" style="aspect-ratio:auto;max-height:560px"><figcaption>ウィーンのオーガニックのスーパーの例（denn's Biomarkt）</figcaption></figure>
       <div class="v-body">
-        <ul class="dots">
-          <li><budoux-ja>オーストリアの人が毎日使う売り場で、有機の商品がどう並び、どう選ばれているかを見る</budoux-ja></li>
-          <li><budoux-ja>一般スーパーと有機専門店を比べる：商品の並べ方、価格や認証マークの表示、商品の伝え方</budoux-ja></li>
-        </ul>
+        <div class="wow"><p class="wow-h">ここがすごい！3つのポイント</p>
+<ol class="wow-l"><li><b><budoux-ja>有機の自社ブランドが、1994年から売り場の定番</budoux-ja></b><span><budoux-ja>スーパーBILLAの「Ja! Natürlich」は、1994年に始まったオーストリア初の有機自社ブランドです。いまは約1,100品目あります（企業の発表）。</budoux-ja></span></li><li><b><budoux-ja>ドラッグストアの棚にも、オーガニックが並ぶ</budoux-ja></b><span><budoux-ja>ドラッグストアdmは、オーストリアに約380店（2025年）あります。ベビーフードは、6mの棚2つ分のうち、8〜9割がオーガニック認証つきです。</budoux-ja></span></li><li><b><budoux-ja>オーガニック専門のスーパーもある</budoux-ja></b><span><budoux-ja>オーガニックの専門スーパー denn&#39;s Biomarkt も、国内に約30店あります。</budoux-ja></span></li></ol></div>
+        <p class="do-h">当日すること</p>
+        <ul class="dots"><li><budoux-ja>見る：一般スーパーと、有機専門店の売り場（店は未定）</budoux-ja></li><li><budoux-ja>比べる：商品の並べ方、価格や認証マークの表示、商品の伝え方</budoux-ja></li><li><budoux-ja>考える：時間があれば、オーガニックの自社ブランドが並ぶドラッグストア dm も</budoux-ja></li></ul>
+        <p class="learn"><em>経営者が持ち帰るヒント</em><budoux-ja>同じ有機の商品でも、売り場での伝え方で、選ばれ方が変わります。自社の商品が売り場でどう伝わっているかを、現地の棚と見比べます。</budoux-ja></p>
         <details class="more"><summary>くわしく見る</summary>
           <div class="more-body">
             <ul class="dots">
