@@ -142,6 +142,12 @@ h4{font-family:var(--serif);font-weight:700;margin:0;text-wrap:balance}
 .night li::before{content:"";position:absolute;left:4px;top:1.7em;width:7px;height:7px;background:var(--terra-l);transform:rotate(45deg)}
 
 /* 6日間をひと目で */
+.roles{margin:0 0 22px;padding:16px 18px;background:var(--card);border:1px solid var(--line);border-radius:14px;font-size:14px;line-height:1.7;color:var(--ink)}
+.roles .lg-h{font-family:var(--serif);font-weight:700;font-size:15px;color:var(--brown);margin:0 0 8px}
+.roles .rl{padding:7px 0;border-top:1px solid var(--line)}
+.roles .rl:first-of-type{border-top:0}
+.roles .rl b{display:block;font-family:var(--serif);font-weight:900;font-size:15px;color:var(--terra-d);letter-spacing:.06em}
+.roles .rl span{display:block}
 .legend{margin:0 0 22px;padding:16px 18px;background:var(--card);border:1px solid var(--line);border-radius:14px;font-size:14px;line-height:1.7;color:var(--ink)}
 .legend .lg-h{font-family:var(--serif);font-weight:700;font-size:15px;color:var(--brown);margin:0 0 8px}
 .legend div.lg{display:flex;gap:12px;align-items:baseline;padding:4px 0}
@@ -812,28 +818,34 @@ p,li,td{text-wrap:pretty}
 <!-- 6日目 -->
 <section class="day d-even" id="day6" style="--dc:#4f6590">
   <div class="dhero"><img src="images/wien_1.jpg" alt="Wien（ウィーン）" loading="lazy">
-    <div class="in"><p class="dl"><span class="dn">6日目</span><span class="dd">7/30（金）</span></p><h3><budoux-ja>ウィーン市と有機団体の話を聞いて、スーパーを見て、空港へ</budoux-ja></h3></div></div>
+    <div class="in"><p class="dl"><span class="dn">6日目</span><span class="dd">7/30（金）</span></p><h3><budoux-ja>ウィーン市と有機団体の話を聞いて、スーパーを見る</budoux-ja></h3></div></div>
   <div class="dbody"><div class="in">
+    <div class="roles">
+      <p class="lg-h">この日の3つの見方</p>
+      <div class="rl"><b>ウィーン市</b><span><budoux-ja>公共の買い手は、何を基準に食品を選ぶのか</budoux-ja></span></div>
+      <div class="rl"><b>BIO AUSTRIA</b><span><budoux-ja>生産者側は、品質の違いをどうつくり、示すのか</budoux-ja></span></div>
+      <div class="rl"><b>スーパー</b><span><budoux-ja>その価値は、売り場でどう伝えられているのか</budoux-ja></span></div>
+    </div>
     <article class="visit">
       <div class="v-head">
         <div class="st"><span class="b wait">調整中</span></div>
-        <h4><budoux-ja>ウィーン市の公共調達の担当の方</budoux-ja></h4>
+        <h4><budoux-ja>ウィーン市の公共調達に関わる担当者</budoux-ja></h4>
         <p class="v-time"><budoux-ja>午前（約90分・同時通訳）</budoux-ja></p>
-        <p class="v-one"><budoux-ja>ウィーン市の公共の食事の調達を担当。「ウィーン市として話せる」と、ご本人からお返事あり</budoux-ja></p>
+        <p class="v-one"><budoux-ja>1日10万食以上を提供するウィーン市。公共施設で有機食品を増やしてきた背景や、食品を選ぶ基準の考え方を、担当者に聞く予定です</budoux-ja></p>
       </div>
       <figure class="v-photo"><img src="images/wien_2.jpg" alt="Wien（ウィーン）" loading="lazy"><figcaption>Wien（ウィーン）</figcaption></figure>
       <div class="v-body">
         <ul class="dots">
           <li><budoux-ja>ウィーン市は1998年から、公共の食事の調達基準を運用</budoux-ja></li>
           <li><budoux-ja>対象は、幼稚園・学校・病院・高齢者施設。1日10万食以上</budoux-ja></li>
-          <li><budoux-ja>有機の割合：幼稚園60%・学校50%・病院 約3分の1・高齢者施設 約35%</budoux-ja></li>
+          <li><budoux-ja>有機の割合：幼稚園60%・学校50%</budoux-ja></li>
         </ul>
         <details class="more"><summary>くわしく見る</summary>
           <div class="more-body">
             <ul class="dots">
               <li><budoux-ja>市の基準は、全体で最低30%（1998年〜）。2026年に40%以上、2030年に55%以上へ上げる計画</budoux-ja></li>
               <li class="note-s"><budoux-ja><small>出典：ウィーン市の食品調達ページ・食品の基準（2024年2月版）。割合は施設ごとの数量ベース、基準の30%は金額ベース</small></budoux-ja></li>
-              <li><budoux-ja>聞くこと：学校・幼稚園・病院・高齢者施設などで、いまの有機の割合にどう届いたか（背景・事情・目標）／オーストリアの調達市場と政策の見通し</budoux-ja></li>
+              <li><budoux-ja>聞くこと：有機食品の基準をどのように決め、公共施設での調達にどう反映してきたのか。その背景と、今後の方向性</budoux-ja></li>
             </ul>
           </div>
         </details>
@@ -843,18 +855,19 @@ p,li,td{text-wrap:pretty}
     <article class="visit">
       <div class="v-head">
         <div class="st"><span class="b wait">調整中</span></div>
-        <h4><budoux-ja>BIO AUSTRIA（オーストリア全国有機農業団体）</budoux-ja></h4>
+        <h4><budoux-ja>BIO AUSTRIA（オーストリアの有機農家を代表する全国団体）</budoux-ja></h4>
       </div>
       <div class="v-body" style="padding-top:4px">
         <ul class="dots">
           <li><budoux-ja>約13,000の有機農家が加盟（公式サイトより）</budoux-ja></li>
-          <li><budoux-ja>EUより厳しい独自の基準をつくり、有機の認証マークを運営</budoux-ja></li>
+          <li><budoux-ja>EUの有機規則より厳しい独自の品質基準をつくり、それに対応するロゴ（認証マーク）を運営</budoux-ja></li>
           <li><budoux-ja>農家への助言・研修、政策への働きかけも行う</budoux-ja></li>
         </ul>
         <details class="more"><summary>くわしく見る</summary>
           <div class="more-body">
             <ul class="dots">
-              <li><budoux-ja>聞くこと：オーストリアの有機の仕組みと、公共の給食での広がり</budoux-ja></li>
+              <li><budoux-ja>独自の基準は、農場全体を有機で管理することや、家畜の飼育環境などにも及びます（BIO AUSTRIA公式サイトより）</budoux-ja></li>
+              <li><budoux-ja>聞くこと：オーストリアの有機の仕組み、独自の品質基準の考え方、公共の給食への有機食品の広がり</budoux-ja></li>
             </ul>
           </div>
         </details>
@@ -871,11 +884,13 @@ p,li,td{text-wrap:pretty}
       <div class="v-body">
         <ul class="dots">
           <li><budoux-ja>オーストリアの人が毎日使う売り場で、有機の商品がどう並び、どう選ばれているかを見る</budoux-ja></li>
-          <li><budoux-ja>有機の小売で見ておきたい店があれば、あわせて入れる</budoux-ja></li>
+          <li><budoux-ja>一般スーパーと有機専門店を比べる：商品の並べ方、価格や認証マークの表示、商品の伝え方</budoux-ja></li>
         </ul>
         <details class="more"><summary>くわしく見る</summary>
           <div class="more-body">
             <ul class="dots">
+              <li><budoux-ja>一般スーパー：有機の商品が、通常の商品の中でどう並び、価格や認証マークがどう表示されているか</budoux-ja></li>
+              <li><budoux-ja>有機専門店：どんな商品が揃い、品質や特徴がどう伝えられているか</budoux-ja></li>
               <li><budoux-ja>時間があれば、オーガニックの自社ブランドが並ぶドラッグストア <span class="nw">DM も</span></budoux-ja></li>
               <li><budoux-ja>DMのベビーフードは、6mの棚2つ分すべてで、その8〜9割がオーガニック認証つきです</budoux-ja></li>
             </ul>
