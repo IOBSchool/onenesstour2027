@@ -378,6 +378,14 @@ p,li,td{text-wrap:pretty}
 .brand{font-size:19px;letter-spacing:.14em;padding:10px 22px 11px;border:2px solid var(--terra-l);background:rgba(43,29,20,.5);text-shadow:none;box-shadow:0 4px 18px rgba(0,0,0,.35)}
 .pre{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 0 10px;font-size:13px;font-weight:700;letter-spacing:.3em;color:var(--cream);text-shadow:0 1px 8px rgba(0,0,0,.7)}
 .pre::before,.pre::after{content:"";width:28px;height:1px;background:var(--cream);opacity:.8}
+.pre{letter-spacing:.14em}
+.fv h1.brand{display:inline-block;margin:0;font-size:18px;line-height:1.6;letter-spacing:.08em;white-space:nowrap;padding:8px 20px 9px;border:2px solid var(--terra-l);border-radius:999px;background:none;box-shadow:none;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.fv .yr2{margin:14px 0 0;padding-left:.2em;font-family:var(--serif);font-weight:900;font-size:64px;line-height:1.2;letter-spacing:.2em;color:var(--cream);text-shadow:0 2px 14px rgba(0,0,0,.55)}
+.fv .lead{font-size:22px;margin-top:16px}
+@media(min-width:700px){.fv h1.brand{font-size:26px}.fv .lead{font-size:26px}}
+.when .w-for{margin:0 auto;max-width:460px;text-align:center;font-size:15.5px;line-height:1.95;letter-spacing:.05em;font-weight:700}
+.when .w-for2{margin:6px auto 0;max-width:460px;text-align:center;font-size:14px;line-height:1.9;color:var(--brown-soft)}
+.when .w-rule{display:block;width:44px;height:1px;background:var(--terra-l);margin:22px auto 24px}
 </style>
 </head>
 <body>
@@ -386,15 +394,17 @@ p,li,td{text-wrap:pretty}
 <header class="fv">
   <img src="images/wachau_1.jpg" alt="Wachau（ヴァッハウ）の果樹園で、羊とともに歩く">
   <div class="in">
-    <h1>オーストリア<br>Onenessツアー<br><span class="yr">2027</span></h1>
-    <p class="by">by 信濃屋 ＆ レムケなつこ</p>
+    <p class="pre">by 信濃屋 ＆ レムケなつこ</p>
+    <h1 class="brand"><span class="nw">オーストリア</span> <span class="nw">Onenessツアー</span></h1>
+    <p class="yr2">2027</p>
     <p class="lead">農地の約27%が有機の国、<br>オーストリアへ行きませんか。</p>
-    <p class="for"><budoux-ja>見て感じたことを自分ごととして受け止めて、帰ってすぐ、未来のために動き出せる人へ。</budoux-ja></p>
-    <p class="for2"><budoux-ja>とくに、経営者の方や、会社を変えたいと考えている方に。</budoux-ja></p>
   </div>
 </header>
 
 <section class="when"><div class="in">
+  <p class="w-for"><budoux-ja>見て感じたことを自分ごととして受け止めて、帰ってすぐ、未来のために動き出せる人へ。</budoux-ja></p>
+  <p class="w-for2"><budoux-ja>とくに、経営者の方や、会社を変えたいと考えている方に。</budoux-ja></p>
+  <span class="w-rule"></span>
   <p class="w-date"><budoux-ja><span class="nw">2027年7月25日（日）</span><span class="nw">〜7月30日（金）</span></budoux-ja><small><budoux-ja>（予定）｜5泊6日</budoux-ja></small></p>
   <p class="w-bus"><budoux-ja>全行程 貸切バス・プロ通訳者による日本語通訳つき</budoux-ja></p>
   <ul class="w-list">
