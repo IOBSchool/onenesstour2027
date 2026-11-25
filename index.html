@@ -319,6 +319,27 @@ details.more[open]>summary{margin-bottom:14px}
 .box.in-list li::before{content:"";position:absolute;left:6px;top:1.05em;width:7px;height:13px;border-right:2.5px solid var(--terra);border-bottom:2.5px solid var(--terra);transform:rotate(45deg)}
 .box.out-list li{color:var(--ink-soft)}
 .box.out-list li::before{content:"";position:absolute;left:4px;top:1.65em;width:13px;border-top:2px solid #a89880}
+/* 申込の流れ・取消料・航空券（PINK案・確定前） */
+.flowband{background:var(--card)}
+.flowband h2{margin-bottom:10px}
+.flowband h3.sub{font-size:20px;line-height:1.5;color:var(--brown);margin:44px 0 10px;padding-bottom:10px;border-bottom:3px solid var(--terra);letter-spacing:.06em}
+.flowband .lead{font-size:15px;line-height:1.95;color:var(--ink-soft);margin:0 0 18px}
+.flowband .fnote{font-size:13.5px;line-height:1.9;color:var(--ink-soft);margin:10px 0 0}
+.apf{list-style:none;margin:0;padding:0}
+.apf li{position:relative;padding:14px 0;border-bottom:1px solid var(--line)}
+.apf li b{display:block;font-size:16px;line-height:1.6;color:var(--brown);margin-bottom:2px}
+.apf li b i{font-style:normal;display:inline-block;margin-right:10px;padding:1px 10px;border:1.5px solid var(--terra);border-radius:20px;font-size:12px;letter-spacing:.08em;color:var(--terra-d)}
+.apf li span{display:block;font-size:15px;line-height:1.9;color:var(--ink-soft)}
+.ctab{width:100%;border-collapse:collapse;margin:6px 0 0;font-size:15px;line-height:1.7}
+.ctab th,.ctab td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.ctab th{font-size:13px;letter-spacing:.08em;color:var(--ink-soft);font-weight:700;border-bottom:2px solid var(--terra)}
+.ctab td:last-child,.ctab th:last-child{text-align:right;white-space:nowrap}
+.ctab tr.tot td{font-weight:700;color:var(--brown)}
+.flowband h4{font-size:16px;line-height:1.6;color:var(--terra-d);margin:26px 0 6px;letter-spacing:.04em}
+.flowband p.t{font-size:15px;line-height:1.95;color:var(--ink-soft);margin:0 0 10px}
+.flt{list-style:none;margin:0 0 6px;padding:0}
+.flt li{padding:9px 0;border-bottom:1px solid var(--line);font-size:15px;line-height:1.8;color:var(--ink-soft)}
+.flt li b{color:var(--brown);margin-right:6px}
 
 /* 関心のある方へ */
 .contact{margin:0;padding:0}
@@ -1108,7 +1129,7 @@ p,li,td{text-wrap:pretty}
     <div class="yen"><span class="nw">約62〜67万円</span>・<span class="nw">航空券は別</span><span class="nw">（確定前の目安）</span></div>
   </div>
   <p class="pricenote"><budoux-ja>この金額は確定前の目安で、変わることがあります。円は1ユーロ＝176円（2026年11月19日の欧州中央銀行の基準値）で換算した目安で、為替によっても変わります。</budoux-ja></p>
-  <p class="pricenote" style="margin:0"><budoux-ja>日本の旅行会社は PINK。お申し込みは2027年1月（予定）から3月末まで、日本の旅行会社PINK経由での受付を予定しています（現在は受付前です）。お支払い先も PINK の予定で、お支払いの時期・割合は、確定後にご案内します。</budoux-ja></p>
+  <p class="pricenote" style="margin:0"><budoux-ja>日本の旅行会社は PINK。お申し込みは2027年1月（予定）から3月末まで、日本の旅行会社PINK経由での受付を予定しています（現在は受付前です）。お支払い先は、旅行会社PINKを予定しています。参加される方には、お申し込み後に申込金を、2027年5月末までに残金をお支払いいただく予定です。申込金の金額や正式なお支払い条件については、確定後にご案内します。</budoux-ja></p>
 </div></section>
 
 <section class="band cream inc"><div class="in">
@@ -1139,16 +1160,93 @@ p,li,td{text-wrap:pretty}
     <div class="box out-list">
       <h3>含まれないもの</h3>
       <ul>
-        <li><budoux-ja>航空券：おすすめの便をご案内します。ご希望の航空会社・日程での、オーダーメードの手配も承ります</budoux-ja>
-          <span class="air"><budoux-ja>おすすめの便：今のところ、トルコ航空を候補にしています</budoux-ja></span>
-          <span class="air"><budoux-ja>オーダーメード：集合・解散の時間に間に合えば、ほかの航空会社でも構いません</budoux-ja></span>
-          <span class="air"><budoux-ja>手配の方法は、確定後にご案内します</budoux-ja></span></li>
+        <li><budoux-ja>航空券：日本とオーストリア間の往復航空券は、ツアー代金に含まれていません。参加される方は、旅行会社PINKのグループ予約をご利用いただくか、ご自身で航空券を手配していただく予定です。PINKが現在確保している航空券の予定価格や便の詳細については、下記の「航空券について」をご覧ください。</budoux-ja></li>
         <li><budoux-ja>上記以外の昼食、飲み物</budoux-ja></li>
         <li><budoux-ja>個人的な費用（お土産・個人の買い物など）</budoux-ja></li>
         <li><budoux-ja>任意の海外旅行傷害保険</budoux-ja></li>
       </ul>
     </div>
   </div>
+</div></section>
+
+<!-- 07b 申込の流れ・取消料・航空券（PINK案・確定前） -->
+<section class="band flowband" id="flow"><div class="in">
+  <h2 data-l="07b ／ FLOW"><budoux-ja>お申し込みの流れ（案）</budoux-ja></h2>
+  <p class="lead"><budoux-ja>以下は、旅行会社PINKから2026年11月25日に届いたお申し込みの流れの案です。現在は正式なお申し込みを受け付けておらず、詳細が確定しましたら改めてご案内します。</budoux-ja></p>
+  <ol class="apf">
+    <li><b><i>STEP 1</i><budoux-ja>2027年3月31日までにお申し込み</budoux-ja></b><span><budoux-ja>参加される方は、各部署・店舗ごとに旅行会社PINKへお申し込みいただきます。</budoux-ja></span></li>
+    <li><b><i>STEP 2</i><budoux-ja>お申し込み受付後2日以内にご案内</budoux-ja></b><span><budoux-ja>PINKから、申込書と申込金のお支払いについての案内メールが届きます。</budoux-ja></span></li>
+    <li><b><i>STEP 3</i><budoux-ja>4〜5月中に航空券を手配</budoux-ja></b><span><budoux-ja>参加される方は、PINKのグループ予約をご利用いただくか、ご自身で航空券を手配していただきます。PINKのグループ予約は5月末で締め切る予定です。</budoux-ja></span></li>
+    <li><b><i>STEP 4</i><budoux-ja>5月末までに残金をお支払い</budoux-ja></b><span><budoux-ja>参加される方は、ツアー代金の残金を5月末までにPINKへお支払いいただきます。</budoux-ja></span></li>
+    <li><b><i>STEP 5</i><budoux-ja>6月末に日程表などをお届け</budoux-ja></b><span><budoux-ja>PINKから、日程表などの書類をメールまたは郵送でお届けします。</budoux-ja></span></li>
+  </ol>
+
+  <h3 class="sub"><budoux-ja>取消料（案）</budoux-ja></h3>
+  <p class="lead"><budoux-ja>以下は、旅行会社PINKから提示された、ツアーのお申し込みを取り消される場合の取消料の案です。取消料はツアー代金に対する割合で、航空券の取消料とは別になります。</budoux-ja></p>
+  <table class="ctab">
+    <thead><tr><th>取消の時期（2027年）</th><th>取消料</th></tr></thead>
+    <tbody>
+      <tr><td>3月31日まで</td><td>無料</td></tr>
+      <tr><td>4月1日〜4月24日</td><td>ツアー代金の10%</td></tr>
+      <tr><td>4月25日〜5月24日</td><td>ツアー代金の20%</td></tr>
+      <tr><td>5月25日〜6月24日</td><td>ツアー代金の30%</td></tr>
+      <tr><td>6月25日〜7月16日</td><td>ツアー代金の50%</td></tr>
+      <tr><td>7月17日〜当日</td><td>ツアー代金の100%</td></tr>
+    </tbody>
+  </table>
+  <p class="fnote"><budoux-ja>※PINKは、祝祭日を除く月曜日〜金曜日の営業時間内（10:00〜18:00）に取消のご連絡を受け付けます。</budoux-ja></p>
+  <p class="fnote"><budoux-ja>※日本国内の銀行への返金については、PINKが取消のご連絡を受けてから1週間以内に返金する予定です。</budoux-ja></p>
+  <p class="fnote"><budoux-ja>※上記の取消料は、PINKが提示した案です。ツアー代金および取消条件は現時点では確定しておらず、正式な内容は確定後にご案内します。</budoux-ja></p>
+
+  <h3 class="sub"><budoux-ja>航空券について</budoux-ja></h3>
+  <details class="more"><summary>便・料金・取消のくわしい案を見る</summary>
+    <h4>航空券の手配方法について</h4>
+    <p class="t"><budoux-ja>旅行会社PINKは、現在、トルコ航空のエコノミークラスのグループ予約として17席ほどを確保しています。参加される方は、PINKのグループ予約をご利用いただくことも、ご自身で航空券を手配していただくことも可能です。以下のフライトや料金、取消条件は、2026年11月25日時点の案です。正式な内容は確定後にご案内します。</budoux-ja></p>
+
+    <h4>おすすめのフライト（予定）</h4>
+    <p class="t" style="margin-bottom:4px"><budoux-ja>PINKは現在、以下のフライトを予定しています。</budoux-ja></p>
+    <ul class="flt">
+      <li><b>往路</b><span class="nw">7月24日　トルコ航空 TK199</span>　羽田 21:35発 → イスタンブール 7月25日 04:45着</li>
+      <li><b>往路</b><span class="nw">7月25日　トルコ航空 TK1883</span>　イスタンブール 07:35発 → ウィーン 08:50着</li>
+      <li><b>復路</b><span class="nw">7月30日　トルコ航空 TK1888</span>　ウィーン 19:55発 → イスタンブール 23:15着</li>
+      <li><b>復路</b><span class="nw">7月31日　トルコ航空 TK198</span>　イスタンブール 02:05発 → 羽田 19:20着</li>
+    </ul>
+
+    <h4>航空券の料金について</h4>
+    <p class="t"><budoux-ja>2026年11月25日時点で、PINKが予定しているエコノミークラスの往復航空券の料金は、お一人228,000円＋諸税です。現在の料金の内訳は、以下のとおりです。</budoux-ja></p>
+    <table class="ctab">
+      <thead><tr><th>項目</th><th>お一人あたり</th></tr></thead>
+      <tbody>
+        <tr><td>航空券代</td><td>228,000円</td></tr>
+        <tr><td>国内諸税・空港使用料</td><td>4,800円</td></tr>
+        <tr><td>燃油サーチャージ</td><td>133,000円</td></tr>
+        <tr><td>海外諸税</td><td>16,250円</td></tr>
+        <tr class="tot"><td>合計</td><td>382,050円</td></tr>
+      </tbody>
+    </table>
+    <p class="fnote"><budoux-ja>2026年11月25日時点の内訳を合計すると、約38万円となります。この金額は確定前の目安であり、実際のお支払い金額とは異なる場合があります。</budoux-ja></p>
+
+    <h4>航空券の料金が変動する理由</h4>
+    <p class="t"><budoux-ja>燃油サーチャージは2か月ごとに見直され、航空券にかかる費用は為替の影響も受けるため、今後大きく変動する可能性があります。2027年6月より前に大幅な値上がりが見込まれる場合は、PINKが参加される皆さまとご相談のうえ、諸税をできるだけ抑えられるよう、早めの発券を検討する予定です。</budoux-ja></p>
+
+    <h4>PINKのグループ予約を利用する場合</h4>
+    <p class="t"><budoux-ja>PINKは、エコノミークラスのグループ予約の受付を2027年5月末で締め切る予定です。これは、6月8日以降、グループ予約に取消料がかかるためです。参加される方がグループ予約の航空券を取り消される場合、現時点では以下の取消料が予定されています。</budoux-ja></p>
+    <table class="ctab">
+      <thead><tr><th>取消の時期（2027年）</th><th>航空券の取消料</th></tr></thead>
+      <tbody>
+        <tr><td>4月21日まで</td><td>無料</td></tr>
+        <tr><td>4月22日〜5月24日</td><td>40,000円</td></tr>
+        <tr><td>5月25日〜6月24日</td><td>60,000円</td></tr>
+        <tr><td>6月25日〜7月16日</td><td>80,000円</td></tr>
+        <tr><td>7月17日〜出発まで</td><td>100,000円</td></tr>
+      </tbody>
+    </table>
+    <p class="fnote"><budoux-ja>※航空券の取消料は、ツアー代金の取消料とは別になります。また、双方の取消料が発生する時期は一部異なります。</budoux-ja></p>
+    <p class="fnote"><budoux-ja>※上記はエコノミークラスのグループ予約に関する案です。ビジネスクラスには別の規定が適用されます。</budoux-ja></p>
+
+    <h4>ご自身で航空券を手配する場合</h4>
+    <p class="t"><budoux-ja>参加される方は、ご自身で航空券を手配していただくことも可能です。航空券の発券時期や取消条件は、航空会社によって異なります。一般的に、航空会社は予約から24〜72時間以内に発券を求めることが多く、発券後すぐに取消料が発生する場合があります。PINKによると、ご自身で手配される航空券の取消料は、グループ予約の取消料よりも2万円ほど低い場合が多いと見込まれます。ただし、実際の取消料は航空券の条件によって異なります。ご自身で航空券を手配される方は、ご予約の際に発券時期と取消条件をご確認ください。</budoux-ja></p>
+  </details>
 </div></section>
 
 <!-- 08 主催者 -->
